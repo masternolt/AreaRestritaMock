@@ -1,0 +1,24 @@
+@font-face {
+    font-family: open_sansregular;
+    src: url('../fonts/OpenSans-Regular.otf');
+}
+@font-face {
+    font-family: sentico_sansregular;
+    src: url('../fonts/SenticoSansDT-Regular.otf');
+}
+@font-face {
+    font-family: sentico_sansbold;
+    src: url("../fonts/SenticoSansDT-Bold.otf");
+}
+@font-face {
+    font-family: senticosans_italic;
+    src: url("../fonts/SenticoSansDT-Italic.otf");
+}
+@font-face {
+    font-family: sentico_sanslight;
+    src: url("../fonts/SenticoSansDT-Light.otf");
+}
+@font-face {
+    font-family: sentico_medium;
+    src: url("../fonts/SenticoSansDT-Medium.otf");
+}
