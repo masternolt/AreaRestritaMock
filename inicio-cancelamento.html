@@ -1,0 +1,2154 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Célula de Reversão - Mongeral Aegon</title>
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <base href="/">
+
+  <link rel="manifest" href="manifest.json">
+  <!-- Favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/assets/images/safari-pinned-tab.svg" color="#007ac3">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <meta name="msapplication-TileColor" content="#007ac3">
+  <meta name="theme-color" content="#007ac3">
+
+  <!-- add to homescreen for ios -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+</head>
+
+<body>
+  <style>
+    /*!
+ * Bootstrap v4.2.1 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */:root{--breakpoint-xs:0;--breakpoint-sm:576px;--breakpoint-md:768px;--breakpoint-lg:992px;--breakpoint-xl:1200px}.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:576px){.container{max-width:540px}}@media (min-width:769px){.container{max-width:720px}}@media (min-width:992px){.container{max-width:960px}}@media (min-width:1200px){.container{max-width:1140px}}.container-fluid{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}.row{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}.no-gutters{margin-right:0;margin-left:0}.no-gutters>.col,.no-gutters>[class*=col-]{padding-right:0;padding-left:0}.col,.col-1,.col-10,.col-11,.col-12,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-auto,.col-lg,.col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-auto,.col-md,.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-auto,.col-sm,.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-auto,.col-xl,.col-xl-1,.col-xl-10,.col-xl-11,.col-xl-12,.col-xl-2,.col-xl-3,.col-xl-4,.col-xl-5,.col-xl-6,.col-xl-7,.col-xl-8,.col-xl-9,.col-xl-auto{position:relative;width:100%;padding-right:15px;padding-left:15px}.col{-ms-flex-preferred-size:0;flex-basis:0;-ms-flex-positive:1;flex-grow:1;max-width:100%}.col-auto{-ms-flex:0 0 auto;flex:0 0 auto;width:auto;max-width:100%}.col-1{-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%}.col-2{-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%}.col-3{-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}.col-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%}.col-5{-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%}.col-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col-7{-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%}.col-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%}.col-9{-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}.col-10{-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%}.col-11{-ms-flex:0 0 91.666667%;flex:0 0 91.666667%;max-width:91.666667%}.col-12{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}.order-first{-ms-flex-order:-1;order:-1}.order-last{-ms-flex-order:13;order:13}.order-0{-ms-flex-order:0;order:0}.order-1{-ms-flex-order:1;order:1}.order-2{-ms-flex-order:2;order:2}.order-3{-ms-flex-order:3;order:3}.order-4{-ms-flex-order:4;order:4}.order-5{-ms-flex-order:5;order:5}.order-6{-ms-flex-order:6;order:6}.order-7{-ms-flex-order:7;order:7}.order-8{-ms-flex-order:8;order:8}.order-9{-ms-flex-order:9;order:9}.order-10{-ms-flex-order:10;order:10}.order-11{-ms-flex-order:11;order:11}.order-12{-ms-flex-order:12;order:12}.offset-1{margin-left:8.333333%}.offset-2{margin-left:16.666667%}.offset-3{margin-left:25%}.offset-4{margin-left:33.333333%}.offset-5{margin-left:41.666667%}.offset-6{margin-left:50%}.offset-7{margin-left:58.333333%}.offset-8{margin-left:66.666667%}.offset-9{margin-left:75%}.offset-10{margin-left:83.333333%}.offset-11{margin-left:91.666667%}@media (min-width:576px){.col-sm{-ms-flex-preferred-size:0;flex-basis:0;-ms-flex-positive:1;flex-grow:1;max-width:100%}.col-sm-auto{-ms-flex:0 0 auto;flex:0 0 auto;width:auto;max-width:100%}.col-sm-1{-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%}.col-sm-2{-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%}.col-sm-3{-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}.col-sm-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%}.col-sm-5{-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%}.col-sm-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col-sm-7{-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%}.col-sm-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%}.col-sm-9{-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}.col-sm-10{-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%}.col-sm-11{-ms-flex:0 0 91.666667%;flex:0 0 91.666667%;max-width:91.666667%}.col-sm-12{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}.order-sm-first{-ms-flex-order:-1;order:-1}.order-sm-last{-ms-flex-order:13;order:13}.order-sm-0{-ms-flex-order:0;order:0}.order-sm-1{-ms-flex-order:1;order:1}.order-sm-2{-ms-flex-order:2;order:2}.order-sm-3{-ms-flex-order:3;order:3}.order-sm-4{-ms-flex-order:4;order:4}.order-sm-5{-ms-flex-order:5;order:5}.order-sm-6{-ms-flex-order:6;order:6}.order-sm-7{-ms-flex-order:7;order:7}.order-sm-8{-ms-flex-order:8;order:8}.order-sm-9{-ms-flex-order:9;order:9}.order-sm-10{-ms-flex-order:10;order:10}.order-sm-11{-ms-flex-order:11;order:11}.order-sm-12{-ms-flex-order:12;order:12}.offset-sm-0{margin-left:0}.offset-sm-1{margin-left:8.333333%}.offset-sm-2{margin-left:16.666667%}.offset-sm-3{margin-left:25%}.offset-sm-4{margin-left:33.333333%}.offset-sm-5{margin-left:41.666667%}.offset-sm-6{margin-left:50%}.offset-sm-7{margin-left:58.333333%}.offset-sm-8{margin-left:66.666667%}.offset-sm-9{margin-left:75%}.offset-sm-10{margin-left:83.333333%}.offset-sm-11{margin-left:91.666667%}}@media (min-width:769px){.col-md{-ms-flex-preferred-size:0;flex-basis:0;-ms-flex-positive:1;flex-grow:1;max-width:100%}.col-md-auto{-ms-flex:0 0 auto;flex:0 0 auto;width:auto;max-width:100%}.col-md-1{-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%}.col-md-2{-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%}.col-md-3{-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}.col-md-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%}.col-md-5{-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%}.col-md-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col-md-7{-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%}.col-md-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%}.col-md-9{-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}.col-md-10{-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%}.col-md-11{-ms-flex:0 0 91.666667%;flex:0 0 91.666667%;max-width:91.666667%}.col-md-12{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}.order-md-first{-ms-flex-order:-1;order:-1}.order-md-last{-ms-flex-order:13;order:13}.order-md-0{-ms-flex-order:0;order:0}.order-md-1{-ms-flex-order:1;order:1}.order-md-2{-ms-flex-order:2;order:2}.order-md-3{-ms-flex-order:3;order:3}.order-md-4{-ms-flex-order:4;order:4}.order-md-5{-ms-flex-order:5;order:5}.order-md-6{-ms-flex-order:6;order:6}.order-md-7{-ms-flex-order:7;order:7}.order-md-8{-ms-flex-order:8;order:8}.order-md-9{-ms-flex-order:9;order:9}.order-md-10{-ms-flex-order:10;order:10}.order-md-11{-ms-flex-order:11;order:11}.order-md-12{-ms-flex-order:12;order:12}.offset-md-0{margin-left:0}.offset-md-1{margin-left:8.333333%}.offset-md-2{margin-left:16.666667%}.offset-md-3{margin-left:25%}.offset-md-4{margin-left:33.333333%}.offset-md-5{margin-left:41.666667%}.offset-md-6{margin-left:50%}.offset-md-7{margin-left:58.333333%}.offset-md-8{margin-left:66.666667%}.offset-md-9{margin-left:75%}.offset-md-10{margin-left:83.333333%}.offset-md-11{margin-left:91.666667%}}@media (min-width:992px){.col-lg{-ms-flex-preferred-size:0;flex-basis:0;-ms-flex-positive:1;flex-grow:1;max-width:100%}.col-lg-auto{-ms-flex:0 0 auto;flex:0 0 auto;width:auto;max-width:100%}.col-lg-1{-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%}.col-lg-2{-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%}.col-lg-3{-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}.col-lg-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%}.col-lg-5{-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%}.col-lg-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col-lg-7{-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%}.col-lg-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%}.col-lg-9{-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}.col-lg-10{-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%}.col-lg-11{-ms-flex:0 0 91.666667%;flex:0 0 91.666667%;max-width:91.666667%}.col-lg-12{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}.order-lg-first{-ms-flex-order:-1;order:-1}.order-lg-last{-ms-flex-order:13;order:13}.order-lg-0{-ms-flex-order:0;order:0}.order-lg-1{-ms-flex-order:1;order:1}.order-lg-2{-ms-flex-order:2;order:2}.order-lg-3{-ms-flex-order:3;order:3}.order-lg-4{-ms-flex-order:4;order:4}.order-lg-5{-ms-flex-order:5;order:5}.order-lg-6{-ms-flex-order:6;order:6}.order-lg-7{-ms-flex-order:7;order:7}.order-lg-8{-ms-flex-order:8;order:8}.order-lg-9{-ms-flex-order:9;order:9}.order-lg-10{-ms-flex-order:10;order:10}.order-lg-11{-ms-flex-order:11;order:11}.order-lg-12{-ms-flex-order:12;order:12}.offset-lg-0{margin-left:0}.offset-lg-1{margin-left:8.333333%}.offset-lg-2{margin-left:16.666667%}.offset-lg-3{margin-left:25%}.offset-lg-4{margin-left:33.333333%}.offset-lg-5{margin-left:41.666667%}.offset-lg-6{margin-left:50%}.offset-lg-7{margin-left:58.333333%}.offset-lg-8{margin-left:66.666667%}.offset-lg-9{margin-left:75%}.offset-lg-10{margin-left:83.333333%}.offset-lg-11{margin-left:91.666667%}}@media (min-width:1200px){.col-xl{-ms-flex-preferred-size:0;flex-basis:0;-ms-flex-positive:1;flex-grow:1;max-width:100%}.col-xl-auto{-ms-flex:0 0 auto;flex:0 0 auto;width:auto;max-width:100%}.col-xl-1{-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%}.col-xl-2{-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%}.col-xl-3{-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}.col-xl-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%}.col-xl-5{-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%}.col-xl-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col-xl-7{-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%}.col-xl-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%}.col-xl-9{-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}.col-xl-10{-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%}.col-xl-11{-ms-flex:0 0 91.666667%;flex:0 0 91.666667%;max-width:91.666667%}.col-xl-12{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}.order-xl-first{-ms-flex-order:-1;order:-1}.order-xl-last{-ms-flex-order:13;order:13}.order-xl-0{-ms-flex-order:0;order:0}.order-xl-1{-ms-flex-order:1;order:1}.order-xl-2{-ms-flex-order:2;order:2}.order-xl-3{-ms-flex-order:3;order:3}.order-xl-4{-ms-flex-order:4;order:4}.order-xl-5{-ms-flex-order:5;order:5}.order-xl-6{-ms-flex-order:6;order:6}.order-xl-7{-ms-flex-order:7;order:7}.order-xl-8{-ms-flex-order:8;order:8}.order-xl-9{-ms-flex-order:9;order:9}.order-xl-10{-ms-flex-order:10;order:10}.order-xl-11{-ms-flex-order:11;order:11}.order-xl-12{-ms-flex-order:12;order:12}.offset-xl-0{margin-left:0}.offset-xl-1{margin-left:8.333333%}.offset-xl-2{margin-left:16.666667%}.offset-xl-3{margin-left:25%}.offset-xl-4{margin-left:33.333333%}.offset-xl-5{margin-left:41.666667%}.offset-xl-6{margin-left:50%}.offset-xl-7{margin-left:58.333333%}.offset-xl-8{margin-left:66.666667%}.offset-xl-9{margin-left:75%}.offset-xl-10{margin-left:83.333333%}.offset-xl-11{margin-left:91.666667%}}
+    </style>
+    <style>
+
+        /* Fonts
+ ----------------------------------------------------------------------- */
+@font-face {
+  font-family: 'open_sansregular';
+  src: url('OpenSans-Regular.otf');
+}
+@font-face {
+  font-family: 'sentico_sansregular';
+  src: url('SenticoSansDT-Regular.otf');
+}
+@font-face {
+  font-family: 'sentico_sansbold';
+  src: url("SenticoSansDT-Bold.otf");
+}
+@font-face {
+  font-family: 'senticosans_italic';
+  src: url("SenticoSansDT-Italic.otf");
+}
+@font-face {
+  font-family: 'sentico_sanslight';
+  src: url("SenticoSansDT-Light.otf");
+}
+@font-face {
+  font-family: 'sentico_medium';
+  src: url("SenticoSansDT-Medium.otf");
+}
+#RELATIVE {
+  position: relative;
+}
+#ABSOLUTE {
+  position: absolute;
+}
+#FIXED {
+  position: fixed;
+}
+#LEFT {
+  float: left;
+}
+#RIGHT {
+  float: right;
+}
+#CONTENT {
+  content: "";
+}
+#CENTERMARGIN {
+  margin: 0 auto;
+}
+#HIDE {
+  display: none;
+}
+#SHOW {
+  display: block;
+}
+#IN-BLOCK {
+  display: inline-block;
+}
+#NO-MARGIN {
+  margin: 0;
+}
+#NO-PADDING {
+  padding: 0;
+}
+#FAMILY {
+  font-family: sentico_sansregular, sans-serif;
+}
+#LIGHTER {
+  font-weight: lighter;
+}
+#NORMAL {
+  font-weight: normal;
+}
+#BOLD {
+  font-weight: bold;
+}
+#ITALIC {
+  font-style: italic;
+}
+#NO-BORDER {
+  border: none;
+}
+#INDENT {
+  text-indent: -9999px;
+}
+#UNDERLINE {
+  text-decoration: underline;
+}
+#NO-UNDERLINE {
+  text-decoration: none;
+}
+#UPPERCASE {
+  text-transform: uppercase;
+}
+#LOWERCASE {
+  text-transform: lowercase;
+}
+#CENTER {
+  text-align: center;
+}
+#POINTER {
+  cursor: pointer;
+}
+#NO-LIST {
+  list-style: none;
+}
+#CIRCLE {
+  border-radius: 50%;
+}
+#OVERFLOW {
+  overflow: auto;
+}
+#HIDDEN {
+  overflow: hidden;
+}
+#ANIMATE {
+  transition: 0.3s;
+}
+#SPACING {
+  letter-spacing: 2px;
+}
+/* COR PRIMÁRIA */
+.tab-content {
+  background-color: white;
+  padding: 10px 25px;
+}
+.tab-content .dados-pessoais-header {
+  border-bottom: 1px solid #d8d8d8;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+}
+.icon-title-n1 {
+  height: 25px;
+  margin-top: 6px;
+  fill: #0079c2;
+  float: left;
+}
+.dados-pessoais-title {
+  padding-left: 1rem;
+  font-family: sentico_medium, Arial, Verdana;
+  font-size: 25px;
+  cursor: pointer;
+  float: left;
+}
+.dados-pessoais-title .title-value {
+  padding-left: 1rem;
+  font-family: sentico_medium, Arial, Verdana;
+  font-size: 25px;
+  cursor: pointer;
+  float: left;
+  margin-top: 6px;
+}
+.dados-pessoais-title .title-value-mobile {
+  margin-right: 13px;
+  float: unset;
+}
+.nav-title {
+  display: inline-block;
+  font-family: sentico_medium, Arial, Verdana;
+  height: 100%;
+  width: 100%;
+}
+.active-item {
+  border-left: 3px solid #0079c2 !important;
+  color: #0079c2 !important;
+}
+.mobile-arrow-right {
+  display: none;
+}
+.nav {
+  padding: 0;
+}
+.nav-tabs--vertical {
+  border-bottom: none;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.nav-tabs--vertical .nav-item {
+  margin-bottom: 0;
+  padding: 0 1rem;
+  background-color: white;
+  color: #1d1d1d;
+  cursor: pointer;
+  border-left: 3px solid #fff;
+  transition: all 0.5s ease;
+}
+.nav-tabs--vertical .nav-item:hover {
+  color: #0079c2;
+  border-left: 3px solid #0079c2;
+}
+.nav-tabs--vertical .nav-item:last-child .nav-link {
+  border-bottom: none;
+}
+.nav-tabs--vertical .nav-link {
+  border: 0;
+}
+.nav-tabs--vertical .nav-link a {
+  text-decoration: none;
+  color: black;
+}
+.nav-tabs--vertical .nav-link a.visited {
+  text-decoration: none;
+  color: black;
+}
+.nav-tabs--left {
+  margin: 0;
+}
+.nav-tabs--left .nav-link {
+  transition: border-color 0.125s ease-in;
+  white-space: normal;
+  padding: 0;
+  background-color: white;
+  padding: 1rem 0;
+  border-bottom: 1px solid #d8d8d8;
+  margin: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: "sentico_medium", Arial, Verdana;
+}
+.nav-tabs--left .nav-link.active {
+  color: #0079c2;
+  border-left: 3px solid #0079c2;
+}
+.tab-title-color {
+  color: #0079c2 !important;
+  border-left: 2px solid #0079c2 !important;
+}
+/deep/ app-dados-pessoais-alteracaosenha {
+  width: 100%;
+}
+/deep/ app-dados-pessoais-cadastro {
+  width: 100%;
+}
+.content {
+  display: flex;
+}
+.content .summary {
+  margin-left: 0px;
+}
+@media only screen and (max-width: 768px) {
+  .mobile-arrow-right {
+    display: block;
+  }
+  .hidden {
+    display: none !important;
+  }
+  .nav-title {
+    width: 80%;
+  }
+  .selected-nav-item {
+    color: #0079c2;
+    border-left: 2px solid #0079c2;
+  }
+  .col-sm-12 {
+    padding: 0;
+  }
+  .scroller {
+    height: 100%;
+    max-height: 100%;
+  }
+  :host  .nav {
+    display: inline;
+  }
+  .active-item {
+    border-left: 0;
+  }
+  .no-border {
+    border-bottom: 0 !important;
+  }
+  .nav-tabs .nav-item {
+    border-bottom: 1px solid #d8d8d8;
+  }
+  .nav-tabs .nav-link {
+    border: 0;
+  }
+  .tab-title-color {
+    color: #0079c2 !important;
+    border-bottom: 2px solid #d8d8d8 !important;
+  }
+  .tab-content {
+    width: 100%;
+  }
+  .text-mobile {
+    font-size: 12px;
+  }
+  .summary {
+    padding: 0;
+  }
+  .router-content {
+    display: block;
+    padding: 0;
+  }
+  .content {
+    display: block;
+  }
+  .dados-pessoais-title {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+  }
+}
+.st0 {
+  fill: #0079c2;
+}
+.st1 {
+  fill: none;
+  stroke: #0079c2;
+  stroke-width: 5.8105;
+  stroke-miterlimit: 10;
+}
+.lbl-title {
+  color: #929292;
+  font-size: 12px;
+  padding-top: 1rem;
+}
+.box-back {
+  cursor: pointer;
+  font-size: 16px;
+  float: left;
+  margin-top: 7px;
+}
+.box-back span {
+  color: #0079c2;
+  font-family: "sentico_medium", Arial, Verdana;
+}
+.box-back:before {
+  content: "";
+  background-image: url(../../../../../assets/images/icons/link-arrow-10.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 20px;
+  height: 14px;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: -2px;
+  transform: rotate(180deg);
+}
+.row {
+  padding-bottom: 1rem;
+  border-bottom: 1px dashed #d8d8d8;
+  margin-right: 0;
+  margin-left: 0;
+}
+.row:last-child {
+  border-bottom: none;
+}
+#back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: white;
+  margin-bottom: 45px;
+  border-radius: 4px;
+}
+@media only screen and (max-width: 768px) {
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .bootstrap-col {
+    margin-left: -15px;
+  }
+}
+
+:host(mg-button) {
+  margin: 0 20px;
+}
+.st0 {
+  fill: none;
+  stroke: #0079c2;
+  stroke-width: 5.9659;
+  stroke-miterlimit: 10;
+}
+span {
+  color: #b8423e;
+}
+.lbl-title {
+  color: #929292;
+  font-size: 12px;
+  padding-top: 1rem;
+}
+.digital-icon-info svg g line, .digital-icon-info svg g circle {
+  fill: none;
+  stroke: #0079c2;
+}
+.box-back {
+  cursor: pointer;
+  font-size: 16px;
+  float: left;
+  margin-top: 7px;
+}
+.box-back span {
+  color: #0079c2;
+  font-family: "sentico_medium", Arial, Verdana;
+}
+.box-back:before {
+  content: "";
+  background-image: url(../../../../../assets/images/icons/link-arrow-10.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 20px;
+  height: 14px;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: -2px;
+  transform: rotate(180deg);
+}
+.desktop-edit {
+  margin-top: 10px;
+  cursor: pointer;
+  float: right;
+  display: flex;
+}
+.desktop-edit .editar {
+  color: #0079c2;
+}
+.row {
+  padding-bottom: 1rem;
+  border-bottom: 1px dashed #d8d8d8;
+  margin-right: 0;
+  margin-left: 0;
+}
+.row:last-child {
+  border-bottom: none;
+}
+#back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: white;
+  margin-bottom: 45px;
+  border-radius: 4px;
+}
+.lat-row-edited {
+  margin-bottom: 25px;
+}
+.digital-box {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  margin-top: 2rem;
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+}
+.digital-text {
+  margin-left: 1rem;
+}
+ .mg-error-box_sucess {
+  position: absolute;
+  top: auto;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-left: 1rem;
+  margin-top: 7px;
+}
+ .mg-error-box_sucess:before {
+  height: 21px;
+  left: 5px;
+  top: -14px;
+}
+ .mg-error-box_sucess:after, .mg-error-box_sucess:before {
+  content: '';
+  background-color: #fff;
+  position: absolute;
+  border-radius: 10px;
+  width: 5px;
+}
+ .mg-error-box_sucess[_ngcontent-c16]:after {
+  height: 14px;
+  -webkit-transform: rotate(-85deg);
+  transform: rotate(-85deg);
+}
+ .mg-ui-button > .mg-ui-button_title {
+  color: unset;
+}
+ .mg-error-box_sucess:after, .mg-error-box_sucess:before {
+  content: '';
+  background-color: #fff;
+  position: absolute;
+  border-radius: 10px;
+  width: 5px;
+}
+ .select-container {
+  margin-top: 35px !important;
+  min-width: 0 !important;
+}
+ .select-container label {
+  color: #0079c2 !important;
+  top: -16px !important;
+  font-family: 'sentico_sansregular', Arial, Verdana !important;
+  font-size: 12px !important;
+  color: #0079c2 !important;
+}
+ .select-container .bar:after,  .select-container .bar:before {
+  background: #0079c2 !important;
+}
+ .select-container select {
+  font-family: 'sentico_sansregular', Arial, Verdana !important;
+  font-size: 16px !important;
+  border-bottom: 1px solid #929292 !important;
+  padding-bottom: 0 !important;
+}
+ .group-input {
+  margin-top: 35px !important;
+}
+ .group-input .bar:after,  .group-input .bar:before {
+  background: #0079c2 !important;
+}
+ .group-input label {
+  top: -16px !important;
+  font-size: 12px !important;
+  color: #0079c2 !important;
+}
+ .group-input input,  .group-input .group-input textarea {
+  font-family: 'sentico_sansregular', Arial, Verdana !important;
+  font-size: 16px !important;
+  padding-bottom: 0 !important;
+  border-bottom: 1px solid #929292 !important;
+}
+ .group-input .top_label {
+  top: -33px !important;
+}
+.box-buttons {
+  display: flex;
+  margin: inherit;
+  margin-bottom: 25px;
+}
+@media only screen and (max-width: 768px) {
+  .desktop-edit {
+    margin-top: -45px;
+  }
+  .digital-box {
+    margin-top: 1rem;
+  }
+  .box-buttons {
+    display: flex;
+    margin: auto;
+    margin-bottom: 25px;
+  }
+  .lat-row-edited {
+    margin-bottom: 25px;
+    border: none;
+  }
+}
+
+
+
+/* produto */
+
+.detalhe-produto-header-title h2 {
+    font-size: 25px;
+    font-family: sentico_medium, Arial, Helvetica, sans-serif;
+    color: #1d1d1d;
+    margin: 41px 0
+}
+
+.box-back {
+    cursor: pointer;
+    float: left;
+    font-size: 16px;
+    margin-top: 4px
+}
+
+.box-back span {
+    color: #0079c2;
+    font-family: sentico_medium, Arial, Verdana
+}
+
+.scroll-tab {
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border-bottom: 1px solid #d8d8d8
+}
+
+.scroll-tab::-webkit-scrollbar {
+    display: none
+}
+
+.box-back:before {
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width%3D%2219.659%22 height%3D%2217.414%22 viewBox%3D%220 0 19.659 17.414%22%3E  %3Cg id%3D%22link-arrow%22 transform%3D%22translate(0 -1.693)%22%3E    %3Cpath id%3D%22Caminho_153%22 data-name%3D%22Caminho 153%22 d%3D%22M42.9%2C18.4l8-8-8-8%22 transform%3D%22translate(-32.655)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%222%22%2F%3E    %3Cline id%3D%22Linha_76%22 data-name%3D%22Linha 76%22 x1%3D%2218.245%22 transform%3D%22translate(0 10.4)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%222%22%2F%3E  %3C%2Fg%3E%3C%2Fsvg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 20px;
+    height: 14px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: -2px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+
+.box {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    position: relative
+}
+
+.container-app-documentos {
+    margin: 1rem
+}
+
+.hid-box {
+    top: 100%;
+    position: absolute;
+    transition: 1s ease-in-out;
+    height: 100%;
+    background-color: #fff;
+    z-index: 1
+}
+
+.show-hid-box {
+    top: 0
+}
+
+.hide-text-element {
+    height: 0!important
+}
+
+.link {
+    color: #0079c2;
+    font-family: sentico_medium, Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    display: flex
+}
+
+.products-container {
+    margin: 0 25px
+}
+
+.products-container .mg-ui-button_default {
+    background-color: #0079c2;
+    color: #fff
+}
+
+.products-container .mg-ui-button>.mg-ui-button_title {
+    color: #fff
+}
+
+.products-container .mg-ui-button_default:before {
+    background-color: #0077c8
+}
+
+.products-container .product {
+    display: flex;
+    border-top: 1px solid #929292;
+    padding: 16px 0
+}
+
+.products-container .product .product-title {
+    font-family: sentico_medium, Arial, Helvetica, sans-serif;
+    color: #0079c2;
+    width: 100%
+}
+
+.products-container .product .product-value {
+    margin-top: 10px;
+    font-family: sentico_sansregular;
+    display: table
+}
+
+.products-container .product .product-light-text {
+    font-family: sentico_sansregular;
+    color: #9b9b9b
+}
+
+.products-container .product .product-value-detail {
+    width: 100%;
+    margin: 16px 0
+}
+
+.products-container .product .product-arrow-down {
+    float: right;
+    width: 5%;
+    display: table;
+    margin-top: 34px
+}
+
+.products-container .product:last-child {
+    border-bottom: 1px solid #929292
+}
+
+.shard-container {
+    margin: 41px 0
+}
+
+.detail-value {
+    display: flex;
+    padding: 1rem 25px
+}
+
+.detail-value .value-title {
+    width: 100%;
+    font-family: sentico_medium, Arial, Helvetica, sans-serif
+}
+
+.detail-value .value {
+    width: 100%;
+    text-align: right;
+    font-family: sentico_medium, Arial, Helvetica, sans-serif
+}
+
+.detalhe-produto-container .detalhe-produto-padding {
+    padding: 0 25px 25px;
+    background-color: #fff
+}
+
+.detalhe-produto-container .detalhe-produto-padding .detalhe-produto-header {
+    margin: 0
+}
+
+.detalhe-produto-container .detalhe-produto-padding .detalhe-produto-header .detalhe-produto-title {
+    border-bottom: 1px solid #d8d8d8;
+    align-items: center;
+    padding: 25px 0;
+    flex-direction: row;
+    margin-bottom: 41px
+}
+
+.detalhe-produto-container .detalhe-produto-padding .detalhe-produto-header .detalhe-produto-title .title {
+    color: #000;
+    text-align: center;
+    flex: 1
+}
+
+.detalhe-produto-container .detalhe-produto-padding .detalhe-produto-header .detalhe-produto-title .title .title-value {
+    margin-right: 84px;
+    font-size: 25px;
+    font-family: sentico_medium, Arial, Helvetica, sans-serif
+}
+
+.detalhe-produto-container .detalhe-produto-padding .detalhe-produto-header .produto-header .produto-img {
+    margin: 0 auto 25px;
+    display: flex;
+    height: 67px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center
+}
+
+.detalhe-produto-container .detalhe-produto-padding .detalhe-produto-header .produto-header .produto-title {
+    text-align: center;
+    font-size: 25px;
+    font-family: sentico_medium, Arial, Helvetica, sans-serif;
+    margin: 1rem 0 0 10px
+}
+
+.detalhe-produto-container .detalhe-produto-padding .detalhe-produto-header .produto-header .produto-description {
+    text-align: center;
+    color: #929292;
+    transition: 1s ease-in-out;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 22px;
+    max-width: 428px
+}
+
+.tabs-detalhe {
+    background-color: #fff;
+    width: 100%;
+    margin-bottom: 25px
+}
+
+.tabs-detalhe .detalhe-subtitle {
+    text-align: center;
+    padding: 1rem 0;
+    font-family: sentico_medium, Arial, Helvetica, sans-serif
+}
+
+.tabs-detalhe .detalhe-produto-tab-container {
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    overflow: auto
+}
+
+.tabs-detalhe .detalhe-produto-tab-container .tabs {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex
+}
+
+.tabs-detalhe .detalhe-produto-tab-container .tabs li {
+    cursor: pointer;
+    display: inline-block;
+    font-family: sentico_medium, Arial, Helvetica, sans-serif
+}
+
+.tabs-detalhe .detalhe-produto-tab-container .tabs li .tab-item {
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    padding: 16px 25px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #0079c2;
+    transition: color .15s ease-in-out
+}
+
+.tabs-detalhe .detalhe-produto-tab-container .tabs li .tab-item:hover {
+    color: #003c64
+}
+
+.tabs-detalhe .detalhe-produto-tab-container .tabs .marker {
+    position: absolute;
+    transition: .15s ease-in-out;
+    height: 3px;
+    background: #0079c2;
+    left: 0;
+    bottom: 0
+}
+
+.tabs-detalhe .detalhe-produto-tab-container .tabs .active-tab {
+    font-family: sentico_medium, Arial, Helvetica, sans-serif;
+    color: #0079c2
+}
+
+.tabs-detalhe .detalhe-produto-tab-container .tabs .active-tab .active-tab-div {
+    font-family: sentico_medium, Arial, Helvetica, sans-serif;
+    text-transform: uppercase
+}
+
+.tabs-detalhe .tabs-content {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 41px
+}
+
+.tabs-detalhe .tabs-content .total-label {
+    color: #929292;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 41px
+}
+
+.tabs-detalhe .tabs-content .total-value {
+    padding: 0 1rem 41px;
+    text-align: center;
+    font-family: sentico_medium, Arial, Helvetica, sans-serif;
+    font-size: 41px;
+    transition: .4s ease-in-out
+}
+
+.tabs-detalhe .tabs-content .total-value span {
+    font-size: 16px;
+    font-family: sentico_medium, Arial, Helvetica, sans-serif;
+    color: #000;
+    transition: .4s ease-in-out
+}
+
+.tabs-detalhe .tabs-content .total-value-detail-open {
+    font-size: 25px;
+    padding: 0 1rem 41px;
+    color: #929292
+}
+
+.tabs-detalhe .tabs-content .total-value-detail-open span {
+    font-size: 16px;
+    font-family: sentico_medium, Arial, Helvetica, sans-serif;
+    color: #929292
+}
+
+.tabs-detalhe .tabs-content .acionar-seguro-btn {
+    margin: 0 1rem;
+    padding: 41px 0;
+    border-top: 1px solid #dbdbdb
+}
+
+@media only screen and (min-width: 769px) {
+  .tabs-detalhe .detalhe-title {
+    font-family: sentico_medium, Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    padding: 41px 25px;
+  }
+}
+
+.franquia-container .franquia-title {
+    color: #101010;
+    font-family: sentico_medium, Arial, Helvetica, sans-serif;
+    font-size: 25px
+}
+
+.franquia-container .franquia-description {
+    color: #9b9b9b;
+    margin: 1rem 0
+}
+
+.franquia-container .franquia-img {
+    margin-left: 10px
+}
+
+.limite-diarias-container .limite-diarias-title {
+    color: #101010;
+    font-family: sentico_medium, Arial, Helvetica, sans-serif;
+    font-size: 25px
+}
+
+.limite-diarias-container .limite-diarias-item-container {
+    margin: 25px 0
+}
+
+.limite-diarias-container .limite-diarias-item-container .limite-diarias-item {
+    display: flex;
+    margin-bottom: 25px
+}
+
+.limite-diarias-container .limite-diarias-item-container .limite-diarias-item .diarias {
+    font-family: sentico_medium, Arial, Helvetica, sans-serif;
+    margin-right: 10px
+}
+
+.limite-diarias-container .limite-diarias-item-container .limite-diarias-item .diarias-description {
+    color: #9b9b9b
+}
+
+.limite-diarias-container .limite-diarias-item-container .limite-diarias-item:last-child {
+    margin-bottom: 0
+}
+
+.beneficiarios-container {
+    font-family: sentico_medium, Arial, Helvetica, sans-serif
+}
+
+.beneficiarios-container .beneficiarios-title {
+    font-size: 25px;
+    margin-bottom: 1rem
+}
+
+.vigencia-container .vigencia-title {
+    color: #101010;
+    font-family: sentico_medium, Arial, Helvetica, sans-serif;
+    font-size: 25px
+}
+
+.vigencia-container .vigencia-detalhes {
+    display: flex;
+    margin-top: 25px
+}
+
+.vigencia-container .vigencia-detalhes .vigencia-img {
+    margin-right: 10px;
+    width: 15px;
+    height: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 7px
+}
+
+.vigencia-container .vigencia-detalhes .descricao-nok {
+    color: #929292
+}
+
+.reserva-financeira-container {
+    margin-bottom: 41px
+}
+
+.reserva-financeira-container .reserva-financeira-title {
+    font-size: 25px;
+    font-family: sentico_medium;
+    color: #1d1d1d;
+    margin-bottom: 25px
+}
+
+.reserva-financeira-container .reserva-financeira-descricao {
+    font-size: 16px;
+    font-family: sentico_sansregular;
+    color: #929292
+}
+
+.reserva-financeira-container .reserva-financeira-dados {
+    display: flex;
+    justify-content: space-around;
+    margin: 25px 0
+}
+
+.reserva-financeira-container .reserva-financeira-dados .reserva-financeira-dado {
+    flex: 1
+}
+
+.reserva-financeira-container .reserva-financeira-dados .reserva-financeira-dado .reserva-financeira-label {
+    font-size: 10px
+}
+
+.reserva-financeira-container .reserva-financeira-dados .reserva-financeira-dado .reserva-financeira-valor {
+    font-size: 16px
+}
+
+.img-download {
+    background-image: url("data:image/svg+xml,%3Csvg id%3D%22Link_Arrow_Download%22 data-name%3D%22Link Arrow Download%22 xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 16.026 17%22%3E  %3Cdefs%3E    %3Cstyle%3E      .cls-1%2C .cls-2 %7B        fill%3A none%3B        stroke%3A %230079c2%3B        stroke-width%3A 2px%3B      %7D      .cls-1 %7B        stroke-linejoin%3A round%3B      %7D      .cls-2 %7B        stroke-miterlimit%3A 10%3B      %7D    %3C%2Fstyle%3E  %3C%2Fdefs%3E  %3Cg id%3D%22Group_22%22 data-name%3D%22Group 22%22 transform%3D%22translate(0 0)%22%3E    %3Cpath id%3D%22Path_17%22 data-name%3D%22Path 17%22 class%3D%22cls-1%22 d%3D%22M4.252%2C37.623%2C11.3%2C44.361l7.055-6.738%22 transform%3D%22translate(-3.277 -28.361)%22%2F%3E    %3Cline id%3D%22Line_45%22 data-name%3D%22Line 45%22 class%3D%22cls-2%22 y1%3D%2216%22 transform%3D%22translate(8.023)%22%2F%3E    %3Cline id%3D%22Line_46%22 data-name%3D%22Line 46%22 class%3D%22cls-2%22 x2%3D%2216.027%22 transform%3D%22translate(0 16)%22%2F%3E  %3C%2Fg%3E%3C%2Fsvg%3E")
+}
+
+.img-ok {
+    background-image: url("data:image/svg+xml,%3Csvg width%3D%2218%22 height%3D%2213%22 viewBox%3D%220 0 18 13%22 fill%3D%22none%22 xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath d%3D%22M1 4.63636L7.18182 10.8182L17 1%22 stroke%3D%22%2349AF57%22 stroke-width%3D%222%22%2F%3E%3C%2Fsvg%3E")
+}
+
+.img-nok {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width%3D%2211.414%22 height%3D%2211.414%22 viewBox%3D%220 0 11.414 11.414%22%3E  %3Cg id%3D%22Close%22 transform%3D%22translate(34.207 34.207)%22%3E    %3Cg id%3D%22Close-2%22 data-name%3D%22Close%22 transform%3D%22translate(-33.5 -33.5)%22%3E      %3Cline id%3D%22Linha_347%22 data-name%3D%22Linha 347%22 x1%3D%229.999%22 y2%3D%229.999%22 transform%3D%22translate(0 0.001)%22 fill%3D%22none%22 stroke%3D%22%23b8423e%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%222%22%2F%3E      %3Cline id%3D%22Linha_348%22 data-name%3D%22Linha 348%22 x2%3D%2210%22 y2%3D%2210%22 fill%3D%22none%22 stroke%3D%22%23b8423e%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%222%22%2F%3E    %3C%2Fg%3E  %3C%2Fg%3E%3C%2Fsvg%3E")
+}
+
+.franquia-container,
+.limite-diarias-container,
+.vigencia-container {
+    margin-bottom: 41px
+}
+
+.accordion-dados-detalhes-seguro {
+    padding-left: 0;
+    padding-right: 0
+}
+
+@media only screen and (max-width:992px) {
+    .limite-diarias-container .limite-diarias-item-container .limite-diarias-item {
+        display: table
+    }
+    .limite-diarias-container .limite-diarias-item-container .limite-diarias-item .diarias-description {
+        margin-left: 0
+    }
+}
+
+@media only screen and (min-width:769px) {
+    .accordion-dados-detalhes-seguro {
+        padding-left: 15px;
+        padding-right: 15px
+    }
+    .detalhe-produto-container {
+        margin-bottom: 25px
+    }
+    .tabs-detalhe {
+        background: #fff
+    }
+    .tabs-detalhe .detalhe-title {
+        font-family: sentico_medium, Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        padding: 41px 25px
+    }
+    .tabs-detalhe .detalhe-subtitle {
+        text-align: left;
+        padding: 0 0 1rem 25px
+    }
+    .tabs-detalhe .detalhe-produto-tab-container .tabs {
+        width: unset
+    }
+    .hid-box {
+        width: 100%
+    }
+    .detalhe-produto-container .produto-header .produto-description {
+        min-height: unset;
+        height: unset
+    }
+    .detalhe-produto-container .produto-header .produto-img {
+        margin: 25px auto;
+        display: flex;
+        height: 67px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .box-back span {
+        display: none
+    }
+    .title .title-value {
+        margin-right: 13px!important
+    }
+    .accordion-dados-detalhes-seguro,
+    .detalhe-produto-container {
+        padding-left: 0;
+        padding-right: 0
+    }
+    .detalhe-title {
+        display: none
+    }
+    .carencia-container .carencia-title,
+    .vigencia-container .vigencia-title {
+        margin-bottom: 1rem
+    }
+    .vigencia-container .vigencia-detalhes .vigencia-img .descricao-nok {
+        color: #929292
+    }
+}
+
+.active-content {
+    -webkit-animation: .5s linear fadeIn;
+    animation: .5s linear fadeIn
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        -webkit-transform: translateY(15px);
+        transform: translateY(15px);
+        opacity: 0
+    }
+    to {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        -webkit-transform: translateY(15px);
+        transform: translateY(15px);
+        opacity: 0
+    }
+    to {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1
+    }
+}
+
+.franquia-img svg {
+    vertical-align: unset
+}
+
+.coracao-morte-img {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width%3D%2275.822%22 height%3D%2272.14%22 viewBox%3D%220 0 75.822 72.14%22%3E    %3Cdefs%3E        %3Cstyle%3E            .cls-1%2C.cls-2%7Bfill%3Anone%3Bstroke%3A%230079c2%3Bstroke-miterlimit%3A10%3Bstroke-width%3A4px%7D.cls-1%7Bstroke-linecap%3Around%7D.cls-2%7Bstroke-linecap%3Asquare%7D        %3C%2Fstyle%3E    %3C%2Fdefs%3E    %3Cg id%3D%22death-3%22 transform%3D%22translate(-11.397 -11.405)%22%3E        %3Cg id%3D%22Icons%22 transform%3D%22translate(13.399 13.416)%22%3E            %3Cpath id%3D%22Path_84%22 d%3D%22M85.219 35.618a22.192 22.192 0 0 0-35.9-17.444 22.192 22.192 0 0 0-29.307 33.239l29.309 29.3L78.539 51.5a22.127 22.127 0 0 0 6.68-15.881z%22 class%3D%22cls-1%22 data-name%3D%22Path 84%22 transform%3D%22translate(-13.399 -13.416)%22%2F%3E            %3Cpath id%3D%22Line_18%22 d%3D%22M12.803 0L0 12.801%22 class%3D%22cls-2%22 data-name%3D%22Line 18%22 transform%3D%22translate(29.52 21.853)%22%2F%3E            %3Cpath id%3D%22Line_19%22 d%3D%22M12.803 12.801L0 0%22 class%3D%22cls-2%22 data-name%3D%22Line 19%22 transform%3D%22translate(29.52 21.853)%22%2F%3E        %3C%2Fg%3E    %3C%2Fg%3E%3C%2Fsvg%3E")
+}
+
+.anjo-img {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width%3D%2281.02%22 height%3D%2270.31%22 viewBox%3D%220 0 81.02 70.31%22%3E  %3Cg id%3D%22death-1%22 transform%3D%22translate(-12.012 -12)%22%3E    %3Cg id%3D%22Icons%22 transform%3D%22translate(13.517 13.5)%22%3E      %3Ccircle id%3D%22Elipse_50%22 data-name%3D%22Elipse 50%22 cx%3D%2216.748%22 cy%3D%2216.748%22 r%3D%2216.748%22 transform%3D%22translate(22.347 0)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22square%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Cpath id%3D%22Caminho_85%22 data-name%3D%22Caminho 85%22 d%3D%22M135.231%2C237.936a27.121%2C27.121%2C0%2C1%2C0-52.724%2C0%22 transform%3D%22translate(-69.773 -170.936)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22square%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Ccircle id%3D%22Elipse_51%22 data-name%3D%22Elipse 51%22 cx%3D%2216.748%22 cy%3D%2216.748%22 r%3D%2216.748%22 transform%3D%22translate(22.347 0.002)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22square%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Cpath id%3D%22Caminho_86%22 data-name%3D%22Caminho 86%22 d%3D%22M348.788%2C137.258a7.085%2C7.085%2C0%2C0%2C0%2C4.187-6.3h0a6.812%2C6.812%2C0%2C0%2C0%2C6.811-6.811%2C6.955%2C6.955%2C0%2C0%2C0-.074-1%2C6.814%2C6.814%2C0%2C0%2C0-.721-12.008%2C17.854%2C17.854%2C0%2C0%2C0-16.26.744%22 transform%3D%22translate(-284.958 -92.678)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22square%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Cpath id%3D%22Caminho_87%22 data-name%3D%22Caminho 87%22 d%3D%22M27.7%2C137.258a7.083%2C7.083%2C0%2C0%2C1-4.187-6.3h0a6.812%2C6.812%2C0%2C0%2C1-6.811-6.811%2C6.948%2C6.948%2C0%2C0%2C1%2C.074-1%2C6.814%2C6.814%2C0%2C0%2C1%2C.721-12.008%2C17.854%2C17.854%2C0%2C0%2C1%2C16.26.744%22 transform%3D%22translate(-13.517 -92.678)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22square%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E    %3C%2Fg%3E  %3C%2Fg%3E%3C%2Fsvg%3E")
+}
+
+.aviao-img {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width%3D%2270%22 height%3D%2270%22 viewBox%3D%220 0 70 70%22%3E  %3Cg id%3D%22perda-habilitacao-voo%22 transform%3D%22translate(-12 -12)%22%3E    %3Cg id%3D%22Icons%22 transform%3D%22translate(13.5 13.5)%22%3E      %3Crect id%3D%22Ret%C3%A2ngulo_108%22 data-name%3D%22Ret%C3%A2ngulo 108%22 width%3D%2225.625%22 height%3D%229.909%22 transform%3D%22translate(20.689)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Crect id%3D%22Ret%C3%A2ngulo_109%22 data-name%3D%22Ret%C3%A2ngulo 109%22 width%3D%2267%22 height%3D%2267%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Cpath id%3D%22Caminho_94%22 data-name%3D%22Caminho 94%22 d%3D%22M151.5%2C206.6a12.72%2C12.72%2C0%2C1%2C1%2C24.727%2C0%22 transform%3D%22translate(-121.305 -152.439)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Ccircle id%3D%22Elipse_61%22 data-name%3D%22Elipse 61%22 cx%3D%227.856%22 cy%3D%227.856%22 r%3D%227.856%22 transform%3D%22translate(34.703 22.739)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22square%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Cline id%3D%22Linha_36%22 data-name%3D%22Linha 36%22 x1%3D%2216.176%22 y2%3D%2216.176%22 transform%3D%22translate(7.542 30.363)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Cline id%3D%22Linha_37%22 data-name%3D%22Linha 37%22 x1%3D%2216.176%22 y1%3D%2216.176%22 transform%3D%22translate(7.542 30.363)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E    %3C%2Fg%3E  %3C%2Fg%3E%3C%2Fsvg%3E")
+}
+
+.virus-img {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width%3D%2268.816%22 height%3D%2268.877%22 viewBox%3D%220 0 68.816 68.877%22%3E  %3Cg id%3D%22disease%22 transform%3D%22translate(-12 -12)%22%3E    %3Cg id%3D%22Icons%22 transform%3D%22translate(13.5 13.5)%22%3E      %3Ccircle id%3D%22Elipse_52%22 data-name%3D%22Elipse 52%22 cx%3D%2220.805%22 cy%3D%2220.805%22 r%3D%2220.805%22 transform%3D%22translate(12.825 12.883)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22square%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Cline id%3D%22Linha_20%22 data-name%3D%22Linha 20%22 x2%3D%2214.026%22 y2%3D%2214.026%22 transform%3D%22translate(48.34 48.401)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22square%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Cline id%3D%22Linha_21%22 data-name%3D%22Linha 21%22 x1%3D%2210.562%22 y2%3D%2210.56%22 transform%3D%22translate(8.382 48.375)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22square%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Ccircle id%3D%22Elipse_53%22 data-name%3D%22Elipse 53%22 cx%3D%224.951%22 cy%3D%224.951%22 r%3D%224.951%22 transform%3D%22translate(57.415 57.476)%22 fill%3D%22%230079c2%22%2F%3E      %3Ccircle id%3D%22Elipse_54%22 data-name%3D%22Elipse 54%22 cx%3D%224.951%22 cy%3D%224.951%22 r%3D%224.951%22 transform%3D%22translate(28.679 54.501)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22square%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Ccircle id%3D%22Elipse_55%22 data-name%3D%22Elipse 55%22 cx%3D%224.951%22 cy%3D%224.951%22 r%3D%224.951%22 transform%3D%22translate(28.649 28.769)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22square%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Ccircle id%3D%22Elipse_56%22 data-name%3D%22Elipse 56%22 cx%3D%224.951%22 cy%3D%224.951%22 r%3D%224.951%22 transform%3D%22translate(3.638 3.492)%22 fill%3D%22%230079c2%22%2F%3E      %3Cline id%3D%22Linha_22%22 data-name%3D%22Linha 22%22 y2%3D%229.927%22 transform%3D%22translate(33.658 2.984)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22square%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Ccircle id%3D%22Elipse_57%22 data-name%3D%22Elipse 57%22 cx%3D%222.984%22 cy%3D%222.984%22 r%3D%222.984%22 transform%3D%22translate(57.132 4.216)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22square%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Ccircle id%3D%22Elipse_58%22 data-name%3D%22Elipse 58%22 cx%3D%222.984%22 cy%3D%222.984%22 r%3D%222.984%22 transform%3D%22translate(0 30.704)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22square%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Ccircle id%3D%22Elipse_59%22 data-name%3D%22Elipse 59%22 cx%3D%222.984%22 cy%3D%222.984%22 r%3D%222.984%22 transform%3D%22translate(5.4 55.948)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22square%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Ccircle id%3D%22Elipse_60%22 data-name%3D%22Elipse 60%22 cx%3D%222.984%22 cy%3D%222.984%22 r%3D%222.984%22 transform%3D%22translate(30.674)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22square%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Cline id%3D%22Linha_23%22 data-name%3D%22Linha 23%22 x2%3D%2210.431%22 y2%3D%2210.431%22 transform%3D%22translate(8.486 8.545)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22square%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Cline id%3D%22Linha_24%22 data-name%3D%22Linha 24%22 x2%3D%229.84%22 transform%3D%22translate(2.984 33.719)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22square%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Cline id%3D%22Linha_25%22 data-name%3D%22Linha 25%22 x1%3D%2211.715%22 y2%3D%2211.715%22 transform%3D%22translate(48.329 7.274)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22square%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E    %3C%2Fg%3E  %3C%2Fg%3E%3C%2Fsvg%3E")
+}
+
+.gesso-img {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width%3D%2280.534%22 height%3D%2270.001%22 viewBox%3D%220 0 80.534 70.001%22%3E  %3Cg id%3D%22temporary-disability-2%22 transform%3D%22translate(-12 -12)%22%3E    %3Cpath id%3D%22Caminho_121%22 data-name%3D%22Caminho 121%22 d%3D%22M13.5%2C80.5H72.667s18.366.175%2C18.366-18.366S73.78%2C44.285%2C73.78%2C44.285H49.724V13.5H13.5Z%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22square%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E    %3Cline id%3D%22Linha_65%22 data-name%3D%22Linha 65%22 y1%3D%2231.536%22 x2%3D%2231.536%22 transform%3D%22translate(13.687 13.509)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E    %3Cline id%3D%22Linha_66%22 data-name%3D%22Linha 66%22 y1%3D%2236.224%22 x2%3D%2236.224%22 transform%3D%22translate(13.696 40.343)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E    %3Cline id%3D%22Linha_67%22 data-name%3D%22Linha 67%22 x1%3D%2217.83%22 y1%3D%2217.83%22 transform%3D%22translate(27.394 62.667)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E    %3Cline id%3D%22Linha_68%22 data-name%3D%22Linha 68%22 x1%3D%2233.302%22 y1%3D%2233.302%22 transform%3D%22translate(43.292 46.876)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E  %3C%2Fg%3E%3C%2Fsvg%3E")
+}
+
+.cadeira-img {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width%3D%2262.248%22 height%3D%2270.002%22 viewBox%3D%220 0 62.248 70.002%22%3E  %3Cg id%3D%22Disability%22 transform%3D%22translate(30.813 35.001)%22%3E    %3Cg id%3D%22Disability-2%22 data-name%3D%22Disability%22 transform%3D%22translate(-29.314 -33.501)%22%3E      %3Ccircle id%3D%22Elipse_68%22 data-name%3D%22Elipse 68%22 cx%3D%227.424%22 cy%3D%227.424%22 r%3D%227.424%22 transform%3D%22translate(20.429)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22square%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Cpath id%3D%22Caminho_146%22 data-name%3D%22Caminho 146%22 d%3D%22M30.608%2C17.6V41.787H45.454L61.382%2C57.714%22 transform%3D%22translate(-2.755 -2.756)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22square%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Cline id%3D%22Linha_73%22 data-name%3D%22Linha 73%22 x2%3D%2214.846%22 transform%3D%22translate(27.853 27.574)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22square%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Cpath id%3D%22Caminho_147%22 data-name%3D%22Caminho 147%22 d%3D%22M41.913%2C50.177A19.579%2C19.579%2C0%2C1%2C1%2C22.335%2C30.6%22 transform%3D%22translate(-2.755 -2.756)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22square%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E    %3C%2Fg%3E  %3C%2Fg%3E%3C%2Fsvg%3E")
+}
+
+.carteira-img {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width%3D%2270%22 height%3D%2270.4%22 viewBox%3D%220 0 70 70.4%22%3E  %3Cg id%3D%22Wallet%22 transform%3D%22translate(35 35.44)%22%3E    %3Cg id%3D%22Wallet-2%22 data-name%3D%22Wallet%22 transform%3D%22translate(-33.5 -33.46)%22%3E      %3Crect id%3D%22Ret%C3%A2ngulo_112%22 data-name%3D%22Ret%C3%A2ngulo 112%22 width%3D%2267%22 height%3D%2250.82%22 transform%3D%22translate(0 16.1)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Cpath id%3D%22Caminho_152%22 data-name%3D%22Caminho 152%22 d%3D%22M3.8%2C21.2%2C61%2C5.1V21.2%22 transform%3D%22translate(-3.8 -5.1)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Ccircle id%3D%22Elipse_71%22 data-name%3D%22Elipse 71%22 cx%3D%224.9%22 cy%3D%224.9%22 r%3D%224.9%22 transform%3D%22translate(48.3 36.6)%22 fill%3D%22%230079c2%22%2F%3E    %3C%2Fg%3E  %3C%2Fg%3E%3C%2Fsvg%3E")
+}
+
+.coracao-transplante-img {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width%3D%2256.353%22 height%3D%2270.088%22 viewBox%3D%220 0 56.353 70.088%22%3E  %3Cg id%3D%22Organ_Transplantation%22 data-name%3D%22Organ Transplantation%22 transform%3D%22translate(27.869 34.997)%22%3E    %3Cg id%3D%22Organ_Transplantation-2%22 data-name%3D%22Organ Transplantation%22 transform%3D%22translate(-26.358 -33.497)%22%3E      %3Cpath id%3D%22Caminho_135%22 data-name%3D%22Caminho 135%22 d%3D%22M28.543%2C20.717a12.744%2C12.744%2C0%2C0%2C0-6.4%2C1.718A12.81%2C12.81%2C0%2C0%2C0%2C4.425%2C39.542c.956%2C1.794%2C19.339%2C27.294%2C19.339%2C27.294a7.886%2C7.886%2C0%2C0%2C0%2C14.1-3.989L41.242%2C35.17a12.818%2C12.818%2C0%2C0%2C0-12.7-14.454Z%22 transform%3D%22translate(-2.925 -2.921)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Cpath id%3D%22Caminho_136%22 data-name%3D%22Caminho 136%22 d%3D%22M34.948%2C2.927A12.808%2C12.808%2C0%2C0%2C0%2C22.139%2C15.736v6.7%22 transform%3D%22translate(-2.922 -2.927)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Cpath id%3D%22Caminho_137%22 data-name%3D%22Caminho 137%22 d%3D%22M22.138%2C33.525A20.674%2C20.674%2C0%2C0%2C1%2C42.833%2C12.831%22 transform%3D%22translate(-2.922 -2.927)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Cpath id%3D%22Caminho_138%22 data-name%3D%22Caminho 138%22 d%3D%22M48.685%2C37.351l6.956%2C6.956L48.677%2C51.27%22 transform%3D%22translate(-2.92 -2.923)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Cpath id%3D%22Caminho_139%22 data-name%3D%22Caminho 139%22 d%3D%22M55.641%2C44.307c-.886.252-33.227%2C0-33.227%2C0%22 transform%3D%22translate(-2.92 -2.923)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E    %3C%2Fg%3E  %3C%2Fg%3E%3C%2Fsvg%3E")
+}
+
+.internacao-img {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width%3D%2270.029%22 height%3D%2270.146%22 viewBox%3D%220 0 70.029 70.146%22%3E  %3Cg id%3D%22internee%22 transform%3D%22translate(-12 -11.88)%22%3E    %3Cg id%3D%22Icons%22 transform%3D%22translate(13.5 13.5)%22%3E      %3Cpath id%3D%22Caminho_90%22 data-name%3D%22Caminho 90%22 d%3D%22M72.58%2C240.8v9.844a7.888%2C7.888%2C0%2C0%2C0%2C7.9%2C7.888H126.8%22 transform%3D%22translate(-59.767 -191.505)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Cline id%3D%22Linha_34%22 data-name%3D%22Linha 34%22 y2%3D%2215.773%22 transform%3D%22translate(12.813 12.813)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Cline id%3D%22Linha_35%22 data-name%3D%22Linha 35%22 x2%3D%2215.775%22 transform%3D%22translate(4.927 20.698)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Cpath id%3D%22Caminho_91%22 data-name%3D%22Caminho 91%22 d%3D%22M13.5%2C42.084a12.814%2C12.814%2C0%2C1%2C0%2C25.629%2C0V13.5H13.5Z%22 transform%3D%22translate(-13.5 -13.5)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22round%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Cpath id%3D%22Caminho_92%22 data-name%3D%22Caminho 92%22 d%3D%22M36.22%2C191.85v10.564H52V191.85%22 transform%3D%22translate(-31.293 -153.171)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Cpath id%3D%22Caminho_93%22 data-name%3D%22Caminho 93%22 d%3D%22M230.064%2C21.417a7.922%2C7.922%2C0%2C0%2C0-12.815-6.224%2C7.922%2C7.922%2C0%2C0%2C0-10.462%2C11.863h0l10.462%2C10.462%2C10.432-10.432h0A7.9%2C7.9%2C0%2C0%2C0%2C230.064%2C21.417Z%22 transform%3D%22translate(-163.035 -13.501)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22round%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E    %3C%2Fg%3E  %3C%2Fg%3E%3C%2Fsvg%3E")
+}
+
+.mb-25 {
+    margin-bottom: 25px
+}
+
+
+/* Custo produto */
+
+.quanto-custa-container {
+    background-color: #fff;
+    padding: 41px 25px
+}
+
+.quanto-custa-container .quanto-custa-title {
+    font-family: sentico_medium, Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    margin-bottom: 25px
+}
+
+.quanto-custa-container .header-value {
+    font-size: 25px;
+    font-family: sentico_medium;
+    margin: 0 auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content
+}
+
+.quanto-custa-container .header-value span {
+    font-size: 16px;
+    font-family: sentico_medium, Arial, Helvetica, sans-serif
+}
+
+.quanto-custa-container .quanto-custa-legendas-container {
+    margin-bottom: 25px;
+    border-bottom: 1px solid #d8d8d8
+}
+
+.quanto-custa-container .quanto-custa-legendas-container .smalltext {
+    font-size: 10px;
+    color: #929292
+}
+
+.quanto-custa-container .quanto-custa-legendas-container .total-color {
+    background-color: #d8d8d8
+}
+
+.quanto-custa-container .quanto-custa-legendas-container .parcial-color {
+    background-color: #0069b4
+}
+
+.quanto-custa-container .quanto-custa-legendas-container .quanto-custa-legenda {
+    display: inline;
+    margin-bottom: 25px
+}
+
+.quanto-custa-container .quanto-custa-legendas-container .quanto-custa-legenda .quanto-custa-legenda-title-container {
+    display: flex;
+    float: left;
+    width: 100%
+}
+
+.quanto-custa-container .quanto-custa-legendas-container .quanto-custa-legenda .quanto-custa-legenda-title-container .quanto-custa-legenda-img {
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    margin-top: 4px;
+    margin-right: 10px
+}
+
+.quanto-custa-container .quanto-custa-legendas-container .quanto-custa-legenda .quanto-custa-legenda-title-container .quanto-custa-legenda-title {
+    color: #000;
+    font-family: sentico_medium, Arial, Helvetica, sans-serif;
+    text-transform: uppercase
+}
+
+.quanto-custa-container .quanto-custa-legendas-container .quanto-custa-legenda .quanto-custa-legenda-value-container .quanto-custa-legenda-value {
+    font-family: sentico_medium, Arial, Helvetica, sans-serif;
+    float: right;
+    width: 90%;
+    margin-bottom: 25px;
+    color: #929292
+}
+
+.quanto-custa-container .quanto-custa-legendas-container .quanto-custa-legenda .quanto-custa-legenda-value-container .quanto-custa-legenda-value:last-child {
+    width: 100%
+}
+
+.quanto-custa-container .quanto-custa-graph-container {
+    height: 25px;
+    display: flex;
+    margin: 67px 0 25px;
+    max-width: 490px
+}
+
+.quanto-custa-container .quanto-custa-graph-container .produto-graph {
+    height: 25px;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    background-color: #0069b4
+}
+
+.quanto-custa-container .quanto-custa-graph-container .total-graph {
+    height: 25px;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: #d8d8d8
+}
+
+.quanto-custa-container .quanto-custa-graph-container .chart-radius-completo {
+    border-radius: 6px!important
+}
+
+.quanto-custa-container .box-link {
+    color: #0079c2;
+    font-family: sentico_medium, Arial, Helvetica, sans-serif;
+    cursor: pointer
+}
+
+.quanto-custa-container .box-link:after {
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width%3D%2219.659%22 height%3D%2217.414%22 viewBox%3D%220 0 19.659 17.414%22%3E  %3Cg id%3D%22link-arrow%22 transform%3D%22translate(0 -1.693)%22%3E    %3Cpath id%3D%22Caminho_153%22 data-name%3D%22Caminho 153%22 d%3D%22M42.9%2C18.4l8-8-8-8%22 transform%3D%22translate(-32.655)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%222%22%2F%3E    %3Cline id%3D%22Linha_76%22 data-name%3D%22Linha 76%22 x1%3D%2218.245%22 transform%3D%22translate(0 10.4)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%222%22%2F%3E  %3C%2Fg%3E%3C%2Fsvg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 16px;
+    height: 14px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: -2px
+}
+
+.digital-icon-info svg g circle,
+.digital-icon-info svg g line {
+    fill: none;
+    stroke: #0079c2
+}
+
+.quanto-custa-description {
+    margin-bottom: 25px
+}
+
+.digital-box {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    margin-top: 2rem;
+    display: inline-flex;
+    width: 100%;
+    align-items: center
+}
+
+.digital-text {
+    margin-left: 1rem
+}
+
+.beneficiarios-container .beneficiarios-title{font-size:25px;font-family:sentico_medium,Arial,Helvetica,sans-serif;margin-bottom:25px}.beneficiarios-container .unico-beneficiario{margin-left:0!important;font-family:sentico_medium,Arial,Helvetica,sans-serif}.beneficiarios-container .grafico-beneficiarios{display:flex;flex-direction:row;align-items:center}.beneficiarios-container .grafico-beneficiarios .grafico{margin-right:41px}.beneficiarios-container .grafico-beneficiarios .beneficiarios-legendas-container{display:flex;flex-direction:column}.beneficiarios-container .grafico-beneficiarios .beneficiarios-legendas-container .beneficiarios-legendas{display:flex;margin-bottom:16px}.beneficiarios-container .grafico-beneficiarios .beneficiarios-legendas-container .beneficiarios-legendas .hide-legend{display:none}.beneficiarios-container .grafico-beneficiarios .beneficiarios-legendas-container .beneficiarios-legendas .beneficiarios-legenda{display:flex}.beneficiarios-container .grafico-beneficiarios .beneficiarios-legendas-container .beneficiarios-legendas .beneficiarios-legenda .beneficiario-nome{font-family:sentico_medium,Arial,Helvetica,sans-serif;color:#000;height:19px;display:flex}.beneficiarios-container .grafico-beneficiarios .beneficiarios-legendas-container .beneficiarios-legendas .beneficiarios-legenda .beneficiario-nome .beneficiarios-legenda-img{height:10px;width:10px;margin-top:4px;border-radius:2px;margin-right:10px}.beneficiarios-container .grafico-beneficiarios .beneficiarios-legendas-container .beneficiarios-legendas .beneficiarios-legenda .beneficiario-valor{font-family:sentico_medium,Arial,Helvetica,sans-serif;margin-left:10px;color:#929292}.beneficiarios-container .grafico-beneficiarios .beneficiarios-legendas-container .beneficiarios-legendas:last-child{margin-bottom:0}.link-extrato-container{margin:41px 0}.link-extrato-container .link-extrato-title{display:flex}.link-extrato-container .link-extrato-title .img{background-image:url("data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width%3D%2218%22 height%3D%2218%22 viewBox%3D%220 0 18 18%22%3E  %3Cg id%3D%22Data%22 transform%3D%22translate(1 1)%22%3E    %3Cg id%3D%22Data-2%22 data-name%3D%22Data%22 transform%3D%22translate(0 0)%22%3E      %3Crect id%3D%22Ret%C3%A2ngulo_388%22 data-name%3D%22Ret%C3%A2ngulo 388%22 width%3D%226.119%22 height%3D%222.366%22 transform%3D%22translate(4.94)%22 fill%3D%22%230079c2%22%2F%3E      %3Cline id%3D%22Linha_313%22 data-name%3D%22Linha 313%22 x2%3D%229.881%22 transform%3D%22translate(3.061 6.131)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%222%22%2F%3E      %3Cline id%3D%22Linha_314%22 data-name%3D%22Linha 314%22 x2%3D%229.881%22 transform%3D%22translate(3.061 9.883)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%222%22%2F%3E      %3Crect id%3D%22Ret%C3%A2ngulo_389%22 data-name%3D%22Ret%C3%A2ngulo 389%22 width%3D%2216%22 height%3D%2216%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%222%22%2F%3E    %3C%2Fg%3E  %3C%2Fg%3E%3C%2Fsvg%3E");width:24px;background-size:contain;background-repeat:no-repeat;margin-right:1rem;margin-top:5px}.link-extrato-container .link-extrato-title .title{color:#0079c2;font-family:sentico_medium,Arial,Helvetica,sans-serif}.link-extrato-container .link-extrato-title .text{color:#0079c2}@media only screen and (max-width:991px){.grafico-beneficiarios{flex-direction:column!important}.grafico-beneficiarios .grafico{margin-right:0!important;margin-bottom:28px}.grafico-beneficiarios .beneficiarios-legendas-container .beneficiarios-legenda{display:block!important}.grafico-beneficiarios .beneficiarios-legendas-container .beneficiarios-legenda .beneficiario-nome{display:flex}.grafico-beneficiarios .beneficiarios-legendas-container .beneficiarios-legenda .beneficiario-nome .beneficiarios-legenda-img{margin-right:10px}.grafico-beneficiarios .beneficiarios-legendas-container .beneficiarios-legenda .beneficiario-valor{margin-left:unset!important}}
+.carencia-container .carencia-title{color:#101010;font-family:sentico_medium,Arial,Helvetica,sans-serif;font-size:25px;margin-bottom:25px}.carencia-container .carencia-detalhes{display:flex;margin-bottom:25px}.carencia-container .carencia-detalhes .carencia-img{margin-right:10px;width:15px;height:10px;background-repeat:no-repeat;background-size:contain;margin-top:7px}.carencia-container .carencia-mais-info{color:#9b9b9b}.img-ok{background-image:url("data:image/svg+xml,%3Csvg width%3D%2218%22 height%3D%2213%22 viewBox%3D%220 0 18 13%22 fill%3D%22none%22 xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath d%3D%22M1 4.63636L7.18182 10.8182L17 1%22 stroke%3D%22%2349AF57%22 stroke-width%3D%222%22%2F%3E%3C%2Fsvg%3E")}.img-nok{background-image:url("data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width%3D%2211.414%22 height%3D%2211.414%22 viewBox%3D%220 0 11.414 11.414%22%3E  %3Cg id%3D%22Close%22 transform%3D%22translate(34.207 34.207)%22%3E    %3Cg id%3D%22Close-2%22 data-name%3D%22Close%22 transform%3D%22translate(-33.5 -33.5)%22%3E      %3Cline id%3D%22Linha_347%22 data-name%3D%22Linha 347%22 x1%3D%229.999%22 y2%3D%229.999%22 transform%3D%22translate(0 0.001)%22 fill%3D%22none%22 stroke%3D%22%23b8423e%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%222%22%2F%3E      %3Cline id%3D%22Linha_348%22 data-name%3D%22Linha 348%22 x2%3D%2210%22 y2%3D%2210%22 fill%3D%22none%22 stroke%3D%22%23b8423e%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%222%22%2F%3E    %3C%2Fg%3E  %3C%2Fg%3E%3C%2Fsvg%3E")}
+
+.hide {
+    display: none
+}
+
+.scroll-tab {
+    font-family: sentico_medium, Arial, Helvetica, sans-serif;
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border-bottom: 1px solid #d8d8d8
+}
+
+.scroll-tab::-webkit-scrollbar {
+    display: none
+}
+
+.seguros-tab-content {
+    background-color: #fff;
+    padding-bottom: 41px;
+    min-height: 550px
+}
+
+.seguros-tab-content .tabs {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex
+}
+
+.seguros-tab-content .tabs li {
+    cursor: pointer;
+    display: inline-block;
+    font-family: sentico_medium, Arial, Helvetica, sans-serif
+}
+
+.seguros-tab-content .tabs li .tab-item {
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    padding: 16px 25px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #0079c2;
+    transition: color .15s ease-in-out
+}
+
+.seguros-tab-content .tabs li .tab-item:hover {
+    color: #003c64
+}
+
+.seguros-tab-content .tabs .marker {
+    position: absolute;
+    transition: .15s ease-in-out;
+    height: 3px;
+    background: #0079c2;
+    left: 0;
+    bottom: 0
+}
+
+.seguros-tab-content .tabs .active-tab {
+    color: #0079c2
+}
+
+.seguros-tab-content .tabs .active-tab .active-tab-div {
+    font-family: sentico_medium, Arial, Helvetica, sans-serif
+}
+
+.seguros-tab-content .tab-content .ilustration {
+    margin: 25px auto;
+    display: flex;
+    height: 67px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center
+}
+
+.seguros-tab-content .tab-content .title-description {
+    height: 145px;
+    margin-bottom: 16px
+}
+
+.seguros-tab-content .tab-content .title-container {
+    color: #1d1d1d;
+    font-family: sentico_medium, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    line-height: 24px;
+    min-height: 48px
+}
+
+.seguros-tab-content .tab-content .description-container {
+    display: flex
+}
+
+.seguros-tab-content .tab-content .description-container .description {
+    width: 235px;
+    height: 63px;
+    margin: 0 auto;
+    text-align: center;
+    color: #9b9b9b;
+    line-height: 22px
+}
+
+.seguros-tab-content .tab-content .values {
+    border-top: 1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
+    min-height: 90px;
+    display: flex
+}
+
+.seguros-tab-content .tab-content .values .value-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%
+}
+
+.seguros-tab-content .tab-content .values .value-container .value-title {
+    font-family: sentico_medium, Arial, Helvetica, sans-serif;
+    color: #1d1d1d
+}
+
+.seguros-tab-content .tab-content .values .value-container .value-content {
+    padding-right: 2px;
+    color: #929292
+}
+
+.seguros-tab-content .tab-content .values .value-container .value {
+    display: flex;
+    color: #929292;
+    font-family: sentico_medium, Arial, Helvetica, sans-serif
+}
+
+.seguros-tab-content .tab-content .values .value-container .value-item {
+    margin-bottom: 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.seguros-tab-content .btn-container {
+    margin: 25px auto 0;
+    display: table
+}
+
+.seguros-tab-content .swiper-card {
+    padding: 25px;
+    border: 1px solid #d8d8d8;
+    max-width: 360px;
+    margin: auto
+}
+
+@media only screen and (max-width:585px) {
+    .seguros-tab-content .container-seguros-small .swiper-card {
+        border: unset
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .seguros-tab-content .seguros-tab-content {
+        background-color: #fff
+    }
+    .seguros-tab-content::ng-deep .swiper-container {
+        padding: 41px 25px 0
+    }
+}
+
+.box-link {
+    color: #0079c2;
+    font-family: sentico_medium, Arial, Helvetica, sans-serif;
+    cursor: pointer
+}
+
+.box-link:after {
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width%3D%2219.659%22 height%3D%2217.414%22 viewBox%3D%220 0 19.659 17.414%22%3E  %3Cg id%3D%22link-arrow%22 transform%3D%22translate(0 -1.693)%22%3E    %3Cpath id%3D%22Caminho_153%22 data-name%3D%22Caminho 153%22 d%3D%22M42.9%2C18.4l8-8-8-8%22 transform%3D%22translate(-32.655)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%222%22%2F%3E    %3Cline id%3D%22Linha_76%22 data-name%3D%22Linha 76%22 x1%3D%2218.245%22 transform%3D%22translate(0 10.4)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%222%22%2F%3E  %3C%2Fg%3E%3C%2Fsvg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 16px;
+    height: 14px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: -2px
+}
+
+.coracao-morte-img {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width%3D%2275.822%22 height%3D%2272.14%22 viewBox%3D%220 0 75.822 72.14%22%3E    %3Cdefs%3E        %3Cstyle%3E            .cls-1%2C.cls-2%7Bfill%3Anone%3Bstroke%3A%230079c2%3Bstroke-miterlimit%3A10%3Bstroke-width%3A4px%7D.cls-1%7Bstroke-linecap%3Around%7D.cls-2%7Bstroke-linecap%3Asquare%7D        %3C%2Fstyle%3E    %3C%2Fdefs%3E    %3Cg id%3D%22death-3%22 transform%3D%22translate(-11.397 -11.405)%22%3E        %3Cg id%3D%22Icons%22 transform%3D%22translate(13.399 13.416)%22%3E            %3Cpath id%3D%22Path_84%22 d%3D%22M85.219 35.618a22.192 22.192 0 0 0-35.9-17.444 22.192 22.192 0 0 0-29.307 33.239l29.309 29.3L78.539 51.5a22.127 22.127 0 0 0 6.68-15.881z%22 class%3D%22cls-1%22 data-name%3D%22Path 84%22 transform%3D%22translate(-13.399 -13.416)%22%2F%3E            %3Cpath id%3D%22Line_18%22 d%3D%22M12.803 0L0 12.801%22 class%3D%22cls-2%22 data-name%3D%22Line 18%22 transform%3D%22translate(29.52 21.853)%22%2F%3E            %3Cpath id%3D%22Line_19%22 d%3D%22M12.803 12.801L0 0%22 class%3D%22cls-2%22 data-name%3D%22Line 19%22 transform%3D%22translate(29.52 21.853)%22%2F%3E        %3C%2Fg%3E    %3C%2Fg%3E%3C%2Fsvg%3E")
+}
+
+.anjo-img {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width%3D%2281.02%22 height%3D%2270.31%22 viewBox%3D%220 0 81.02 70.31%22%3E  %3Cg id%3D%22death-1%22 transform%3D%22translate(-12.012 -12)%22%3E    %3Cg id%3D%22Icons%22 transform%3D%22translate(13.517 13.5)%22%3E      %3Ccircle id%3D%22Elipse_50%22 data-name%3D%22Elipse 50%22 cx%3D%2216.748%22 cy%3D%2216.748%22 r%3D%2216.748%22 transform%3D%22translate(22.347 0)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22square%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Cpath id%3D%22Caminho_85%22 data-name%3D%22Caminho 85%22 d%3D%22M135.231%2C237.936a27.121%2C27.121%2C0%2C1%2C0-52.724%2C0%22 transform%3D%22translate(-69.773 -170.936)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22square%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Ccircle id%3D%22Elipse_51%22 data-name%3D%22Elipse 51%22 cx%3D%2216.748%22 cy%3D%2216.748%22 r%3D%2216.748%22 transform%3D%22translate(22.347 0.002)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22square%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Cpath id%3D%22Caminho_86%22 data-name%3D%22Caminho 86%22 d%3D%22M348.788%2C137.258a7.085%2C7.085%2C0%2C0%2C0%2C4.187-6.3h0a6.812%2C6.812%2C0%2C0%2C0%2C6.811-6.811%2C6.955%2C6.955%2C0%2C0%2C0-.074-1%2C6.814%2C6.814%2C0%2C0%2C0-.721-12.008%2C17.854%2C17.854%2C0%2C0%2C0-16.26.744%22 transform%3D%22translate(-284.958 -92.678)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22square%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Cpath id%3D%22Caminho_87%22 data-name%3D%22Caminho 87%22 d%3D%22M27.7%2C137.258a7.083%2C7.083%2C0%2C0%2C1-4.187-6.3h0a6.812%2C6.812%2C0%2C0%2C1-6.811-6.811%2C6.948%2C6.948%2C0%2C0%2C1%2C.074-1%2C6.814%2C6.814%2C0%2C0%2C1%2C.721-12.008%2C17.854%2C17.854%2C0%2C0%2C1%2C16.26.744%22 transform%3D%22translate(-13.517 -92.678)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22square%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E    %3C%2Fg%3E  %3C%2Fg%3E%3C%2Fsvg%3E")
+}
+
+.aviao-img {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width%3D%2270%22 height%3D%2270%22 viewBox%3D%220 0 70 70%22%3E  %3Cg id%3D%22perda-habilitacao-voo%22 transform%3D%22translate(-12 -12)%22%3E    %3Cg id%3D%22Icons%22 transform%3D%22translate(13.5 13.5)%22%3E      %3Crect id%3D%22Ret%C3%A2ngulo_108%22 data-name%3D%22Ret%C3%A2ngulo 108%22 width%3D%2225.625%22 height%3D%229.909%22 transform%3D%22translate(20.689)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Crect id%3D%22Ret%C3%A2ngulo_109%22 data-name%3D%22Ret%C3%A2ngulo 109%22 width%3D%2267%22 height%3D%2267%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Cpath id%3D%22Caminho_94%22 data-name%3D%22Caminho 94%22 d%3D%22M151.5%2C206.6a12.72%2C12.72%2C0%2C1%2C1%2C24.727%2C0%22 transform%3D%22translate(-121.305 -152.439)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Ccircle id%3D%22Elipse_61%22 data-name%3D%22Elipse 61%22 cx%3D%227.856%22 cy%3D%227.856%22 r%3D%227.856%22 transform%3D%22translate(34.703 22.739)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22square%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Cline id%3D%22Linha_36%22 data-name%3D%22Linha 36%22 x1%3D%2216.176%22 y2%3D%2216.176%22 transform%3D%22translate(7.542 30.363)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Cline id%3D%22Linha_37%22 data-name%3D%22Linha 37%22 x1%3D%2216.176%22 y1%3D%2216.176%22 transform%3D%22translate(7.542 30.363)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E    %3C%2Fg%3E  %3C%2Fg%3E%3C%2Fsvg%3E")
+}
+
+.virus-img {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width%3D%2268.816%22 height%3D%2268.877%22 viewBox%3D%220 0 68.816 68.877%22%3E  %3Cg id%3D%22disease%22 transform%3D%22translate(-12 -12)%22%3E    %3Cg id%3D%22Icons%22 transform%3D%22translate(13.5 13.5)%22%3E      %3Ccircle id%3D%22Elipse_52%22 data-name%3D%22Elipse 52%22 cx%3D%2220.805%22 cy%3D%2220.805%22 r%3D%2220.805%22 transform%3D%22translate(12.825 12.883)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22square%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Cline id%3D%22Linha_20%22 data-name%3D%22Linha 20%22 x2%3D%2214.026%22 y2%3D%2214.026%22 transform%3D%22translate(48.34 48.401)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22square%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Cline id%3D%22Linha_21%22 data-name%3D%22Linha 21%22 x1%3D%2210.562%22 y2%3D%2210.56%22 transform%3D%22translate(8.382 48.375)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22square%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Ccircle id%3D%22Elipse_53%22 data-name%3D%22Elipse 53%22 cx%3D%224.951%22 cy%3D%224.951%22 r%3D%224.951%22 transform%3D%22translate(57.415 57.476)%22 fill%3D%22%230079c2%22%2F%3E      %3Ccircle id%3D%22Elipse_54%22 data-name%3D%22Elipse 54%22 cx%3D%224.951%22 cy%3D%224.951%22 r%3D%224.951%22 transform%3D%22translate(28.679 54.501)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22square%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Ccircle id%3D%22Elipse_55%22 data-name%3D%22Elipse 55%22 cx%3D%224.951%22 cy%3D%224.951%22 r%3D%224.951%22 transform%3D%22translate(28.649 28.769)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22square%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Ccircle id%3D%22Elipse_56%22 data-name%3D%22Elipse 56%22 cx%3D%224.951%22 cy%3D%224.951%22 r%3D%224.951%22 transform%3D%22translate(3.638 3.492)%22 fill%3D%22%230079c2%22%2F%3E      %3Cline id%3D%22Linha_22%22 data-name%3D%22Linha 22%22 y2%3D%229.927%22 transform%3D%22translate(33.658 2.984)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22square%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Ccircle id%3D%22Elipse_57%22 data-name%3D%22Elipse 57%22 cx%3D%222.984%22 cy%3D%222.984%22 r%3D%222.984%22 transform%3D%22translate(57.132 4.216)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22square%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Ccircle id%3D%22Elipse_58%22 data-name%3D%22Elipse 58%22 cx%3D%222.984%22 cy%3D%222.984%22 r%3D%222.984%22 transform%3D%22translate(0 30.704)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22square%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Ccircle id%3D%22Elipse_59%22 data-name%3D%22Elipse 59%22 cx%3D%222.984%22 cy%3D%222.984%22 r%3D%222.984%22 transform%3D%22translate(5.4 55.948)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22square%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Ccircle id%3D%22Elipse_60%22 data-name%3D%22Elipse 60%22 cx%3D%222.984%22 cy%3D%222.984%22 r%3D%222.984%22 transform%3D%22translate(30.674)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22square%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Cline id%3D%22Linha_23%22 data-name%3D%22Linha 23%22 x2%3D%2210.431%22 y2%3D%2210.431%22 transform%3D%22translate(8.486 8.545)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22square%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Cline id%3D%22Linha_24%22 data-name%3D%22Linha 24%22 x2%3D%229.84%22 transform%3D%22translate(2.984 33.719)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22square%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Cline id%3D%22Linha_25%22 data-name%3D%22Linha 25%22 x1%3D%2211.715%22 y2%3D%2211.715%22 transform%3D%22translate(48.329 7.274)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22square%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E    %3C%2Fg%3E  %3C%2Fg%3E%3C%2Fsvg%3E")
+}
+
+.gesso-img {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width%3D%2280.534%22 height%3D%2270.001%22 viewBox%3D%220 0 80.534 70.001%22%3E  %3Cg id%3D%22temporary-disability-2%22 transform%3D%22translate(-12 -12)%22%3E    %3Cpath id%3D%22Caminho_121%22 data-name%3D%22Caminho 121%22 d%3D%22M13.5%2C80.5H72.667s18.366.175%2C18.366-18.366S73.78%2C44.285%2C73.78%2C44.285H49.724V13.5H13.5Z%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22square%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E    %3Cline id%3D%22Linha_65%22 data-name%3D%22Linha 65%22 y1%3D%2231.536%22 x2%3D%2231.536%22 transform%3D%22translate(13.687 13.509)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E    %3Cline id%3D%22Linha_66%22 data-name%3D%22Linha 66%22 y1%3D%2236.224%22 x2%3D%2236.224%22 transform%3D%22translate(13.696 40.343)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E    %3Cline id%3D%22Linha_67%22 data-name%3D%22Linha 67%22 x1%3D%2217.83%22 y1%3D%2217.83%22 transform%3D%22translate(27.394 62.667)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E    %3Cline id%3D%22Linha_68%22 data-name%3D%22Linha 68%22 x1%3D%2233.302%22 y1%3D%2233.302%22 transform%3D%22translate(43.292 46.876)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E  %3C%2Fg%3E%3C%2Fsvg%3E")
+}
+
+.cadeira-img {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width%3D%2262.248%22 height%3D%2270.002%22 viewBox%3D%220 0 62.248 70.002%22%3E  %3Cg id%3D%22Disability%22 transform%3D%22translate(30.813 35.001)%22%3E    %3Cg id%3D%22Disability-2%22 data-name%3D%22Disability%22 transform%3D%22translate(-29.314 -33.501)%22%3E      %3Ccircle id%3D%22Elipse_68%22 data-name%3D%22Elipse 68%22 cx%3D%227.424%22 cy%3D%227.424%22 r%3D%227.424%22 transform%3D%22translate(20.429)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22square%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Cpath id%3D%22Caminho_146%22 data-name%3D%22Caminho 146%22 d%3D%22M30.608%2C17.6V41.787H45.454L61.382%2C57.714%22 transform%3D%22translate(-2.755 -2.756)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22square%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Cline id%3D%22Linha_73%22 data-name%3D%22Linha 73%22 x2%3D%2214.846%22 transform%3D%22translate(27.853 27.574)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22square%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Cpath id%3D%22Caminho_147%22 data-name%3D%22Caminho 147%22 d%3D%22M41.913%2C50.177A19.579%2C19.579%2C0%2C1%2C1%2C22.335%2C30.6%22 transform%3D%22translate(-2.755 -2.756)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22square%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E    %3C%2Fg%3E  %3C%2Fg%3E%3C%2Fsvg%3E")
+}
+
+.carteira-img {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width%3D%2270%22 height%3D%2270.4%22 viewBox%3D%220 0 70 70.4%22%3E  %3Cg id%3D%22Wallet%22 transform%3D%22translate(35 35.44)%22%3E    %3Cg id%3D%22Wallet-2%22 data-name%3D%22Wallet%22 transform%3D%22translate(-33.5 -33.46)%22%3E      %3Crect id%3D%22Ret%C3%A2ngulo_112%22 data-name%3D%22Ret%C3%A2ngulo 112%22 width%3D%2267%22 height%3D%2250.82%22 transform%3D%22translate(0 16.1)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Cpath id%3D%22Caminho_152%22 data-name%3D%22Caminho 152%22 d%3D%22M3.8%2C21.2%2C61%2C5.1V21.2%22 transform%3D%22translate(-3.8 -5.1)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Ccircle id%3D%22Elipse_71%22 data-name%3D%22Elipse 71%22 cx%3D%224.9%22 cy%3D%224.9%22 r%3D%224.9%22 transform%3D%22translate(48.3 36.6)%22 fill%3D%22%230079c2%22%2F%3E    %3C%2Fg%3E  %3C%2Fg%3E%3C%2Fsvg%3E")
+}
+
+.coracao-transplante-img {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width%3D%2256.353%22 height%3D%2270.088%22 viewBox%3D%220 0 56.353 70.088%22%3E  %3Cg id%3D%22Organ_Transplantation%22 data-name%3D%22Organ Transplantation%22 transform%3D%22translate(27.869 34.997)%22%3E    %3Cg id%3D%22Organ_Transplantation-2%22 data-name%3D%22Organ Transplantation%22 transform%3D%22translate(-26.358 -33.497)%22%3E      %3Cpath id%3D%22Caminho_135%22 data-name%3D%22Caminho 135%22 d%3D%22M28.543%2C20.717a12.744%2C12.744%2C0%2C0%2C0-6.4%2C1.718A12.81%2C12.81%2C0%2C0%2C0%2C4.425%2C39.542c.956%2C1.794%2C19.339%2C27.294%2C19.339%2C27.294a7.886%2C7.886%2C0%2C0%2C0%2C14.1-3.989L41.242%2C35.17a12.818%2C12.818%2C0%2C0%2C0-12.7-14.454Z%22 transform%3D%22translate(-2.925 -2.921)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Cpath id%3D%22Caminho_136%22 data-name%3D%22Caminho 136%22 d%3D%22M34.948%2C2.927A12.808%2C12.808%2C0%2C0%2C0%2C22.139%2C15.736v6.7%22 transform%3D%22translate(-2.922 -2.927)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Cpath id%3D%22Caminho_137%22 data-name%3D%22Caminho 137%22 d%3D%22M22.138%2C33.525A20.674%2C20.674%2C0%2C0%2C1%2C42.833%2C12.831%22 transform%3D%22translate(-2.922 -2.927)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Cpath id%3D%22Caminho_138%22 data-name%3D%22Caminho 138%22 d%3D%22M48.685%2C37.351l6.956%2C6.956L48.677%2C51.27%22 transform%3D%22translate(-2.92 -2.923)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Cpath id%3D%22Caminho_139%22 data-name%3D%22Caminho 139%22 d%3D%22M55.641%2C44.307c-.886.252-33.227%2C0-33.227%2C0%22 transform%3D%22translate(-2.92 -2.923)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E    %3C%2Fg%3E  %3C%2Fg%3E%3C%2Fsvg%3E")
+}
+
+.internacao-img {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width%3D%2270.029%22 height%3D%2270.146%22 viewBox%3D%220 0 70.029 70.146%22%3E  %3Cg id%3D%22internee%22 transform%3D%22translate(-12 -11.88)%22%3E    %3Cg id%3D%22Icons%22 transform%3D%22translate(13.5 13.5)%22%3E      %3Cpath id%3D%22Caminho_90%22 data-name%3D%22Caminho 90%22 d%3D%22M72.58%2C240.8v9.844a7.888%2C7.888%2C0%2C0%2C0%2C7.9%2C7.888H126.8%22 transform%3D%22translate(-59.767 -191.505)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Cline id%3D%22Linha_34%22 data-name%3D%22Linha 34%22 y2%3D%2215.773%22 transform%3D%22translate(12.813 12.813)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Cline id%3D%22Linha_35%22 data-name%3D%22Linha 35%22 x2%3D%2215.775%22 transform%3D%22translate(4.927 20.698)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Cpath id%3D%22Caminho_91%22 data-name%3D%22Caminho 91%22 d%3D%22M13.5%2C42.084a12.814%2C12.814%2C0%2C1%2C0%2C25.629%2C0V13.5H13.5Z%22 transform%3D%22translate(-13.5 -13.5)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22round%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Cpath id%3D%22Caminho_92%22 data-name%3D%22Caminho 92%22 d%3D%22M36.22%2C191.85v10.564H52V191.85%22 transform%3D%22translate(-31.293 -153.171)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E      %3Cpath id%3D%22Caminho_93%22 data-name%3D%22Caminho 93%22 d%3D%22M230.064%2C21.417a7.922%2C7.922%2C0%2C0%2C0-12.815-6.224%2C7.922%2C7.922%2C0%2C0%2C0-10.462%2C11.863h0l10.462%2C10.462%2C10.432-10.432h0A7.9%2C7.9%2C0%2C0%2C0%2C230.064%2C21.417Z%22 transform%3D%22translate(-163.035 -13.501)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-linecap%3D%22round%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%223%22%2F%3E    %3C%2Fg%3E  %3C%2Fg%3E%3C%2Fsvg%3E")
+}
+
+@media only screen and (min-width:769px) {
+    .ld-hover-shadow {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, .1);
+        transition: transform, box-shadow .6s cubic-bezier(.165, .84, .44, 1), -webkit-transform
+    }
+    .ld-hover-shadow:hover {
+        -webkit-transform: scale(1.01, 1.01);
+        transform: scale(1.01, 1.01);
+        box-shadow: 0 0 16px 6px rgba(0, 0, 0, .1)
+    }
+    ::ng-deep .swiper-container {
+        padding: 41px 25px 0
+    }
+}
+
+.active-content {
+    -webkit-animation: .5s linear fadeIn;
+    animation: .5s linear fadeIn
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        -webkit-transform: translateY(15px);
+        transform: translateY(15px);
+        opacity: 0
+    }
+    to {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        -webkit-transform: translateY(15px);
+        transform: translateY(15px);
+        opacity: 0
+    }
+    to {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1
+    }
+}
+
+.seguro-container-large .seguro-container{width:1110px}.seguro-container-medium .seguro-container{width:730px}.seguro-container-small .seguro-container{width:640px}.seguro-container-xsmall .seguro-container{width:350px}.seguro-header{background-color:#fff;padding:41px 25px;font-family:sentico_medium,Arial,Helvetica,sans-serif}.seguro-header .title{display:initial;width:200px;font-size:25px;font-family:sentico_medium,Arial,Helvetica,sans-serif}.seguro-header .header-action{float:right;margin-top:12px;color:#0079c2}
+.img-download{background-image:url("data:image/svg+xml,%3Csvg id%3D%22Link_Arrow_Download%22 data-name%3D%22Link Arrow Download%22 xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 16.026 17%22%3E  %3Cdefs%3E    %3Cstyle%3E      .cls-1%2C .cls-2 %7B        fill%3A none%3B        stroke%3A %230079c2%3B        stroke-width%3A 2px%3B      %7D      .cls-1 %7B        stroke-linejoin%3A round%3B      %7D      .cls-2 %7B        stroke-miterlimit%3A 10%3B      %7D    %3C%2Fstyle%3E  %3C%2Fdefs%3E  %3Cg id%3D%22Group_22%22 data-name%3D%22Group 22%22 transform%3D%22translate(0 0)%22%3E    %3Cpath id%3D%22Path_17%22 data-name%3D%22Path 17%22 class%3D%22cls-1%22 d%3D%22M4.252%2C37.623%2C11.3%2C44.361l7.055-6.738%22 transform%3D%22translate(-3.277 -28.361)%22%2F%3E    %3Cline id%3D%22Line_45%22 data-name%3D%22Line 45%22 class%3D%22cls-2%22 y1%3D%2216%22 transform%3D%22translate(8.023)%22%2F%3E    %3Cline id%3D%22Line_46%22 data-name%3D%22Line 46%22 class%3D%22cls-2%22 x2%3D%2216.027%22 transform%3D%22translate(0 16)%22%2F%3E  %3C%2Fg%3E%3C%2Fsvg%3E")}.digital-box{background-color:#f0f0f0;padding:1rem;display:inline-flex;width:100%;align-items:center;margin-bottom:16px}.digital-text{margin-left:1rem}.documentos-container{margin-bottom:25px}.documentos-container .documentos-title{color:#101010;font-family:sentico_medium,Arial,Helvetica,sans-serif;font-size:25px;margin-bottom:25px}.documentos-container .documentos-description{color:#9b9b9b;margin-bottom:16px}.documentos-container .documento{cursor:pointer;display:flex}.documentos-container .documento .documento-img{width:16px;height:16px;background-repeat:no-repeat;background-size:contain;margin-right:10px;margin-top:2px}.documentos-container .documento .documento-name{font-family:sentico_medium,Arial,Helvetica,sans-serif;color:#0079c2;margin-bottom:16px}.documentos-container .documento:last-child .documento-name{margin-bottom:0}.link-extrato-container{cursor:pointer;margin:25px 0}.link-extrato-container .link-extrato-title{display:flex}.link-extrato-container .link-extrato-title .img{background-image:url("data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width%3D%2218%22 height%3D%2218%22 viewBox%3D%220 0 18 18%22%3E  %3Cg id%3D%22Data%22 transform%3D%22translate(1 1)%22%3E    %3Cg id%3D%22Data-2%22 data-name%3D%22Data%22 transform%3D%22translate(0 0)%22%3E      %3Crect id%3D%22Ret%C3%A2ngulo_388%22 data-name%3D%22Ret%C3%A2ngulo 388%22 width%3D%226.119%22 height%3D%222.366%22 transform%3D%22translate(4.94)%22 fill%3D%22%230079c2%22%2F%3E      %3Cline id%3D%22Linha_313%22 data-name%3D%22Linha 313%22 x2%3D%229.881%22 transform%3D%22translate(3.061 6.131)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%222%22%2F%3E      %3Cline id%3D%22Linha_314%22 data-name%3D%22Linha 314%22 x2%3D%229.881%22 transform%3D%22translate(3.061 9.883)%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%222%22%2F%3E      %3Crect id%3D%22Ret%C3%A2ngulo_389%22 data-name%3D%22Ret%C3%A2ngulo 389%22 width%3D%2216%22 height%3D%2216%22 fill%3D%22none%22 stroke%3D%22%230079c2%22 stroke-miterlimit%3D%2210%22 stroke-width%3D%222%22%2F%3E    %3C%2Fg%3E  %3C%2Fg%3E%3C%2Fsvg%3E");width:24px;height:18px;background-size:initial;background-repeat:no-repeat;margin-right:10px;margin-top:5px}.link-extrato-container .link-extrato-title .text-content{flex:1}.link-extrato-container .link-extrato-title .title{color:#0079c2;font-family:sentico_medium,Arial,Helvetica,sans-serif}.link-extrato-container .link-extrato-title .text{color:#0079c2}
+
+.control {
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+  font-family: Arial;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.control input {
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+  .control input:checked ~ .control__indicator:before,   .control input:checked ~ .control__indicator:after {
+  opacity: 1;
+  visibility: visible;
+}
+
+  .control input:checked ~ .control__indicator {
+  background: #6dbf79;
+  border-color: #6dbf79;
+}
+
+  .control.disabled {
+  pointer-events: none;
+}
+
+  .control.disabled input:checked ~ .control__indicator {
+  background: #666;
+  border-color: #666;
+}
+
+  .control input:checked ~ .control__indicator.bounceUp {
+  -webkit-animation: bounceUp .5s forwards;
+  animation: bounceUp .5s forwards;
+}
+
+  .control .control__indicator {
+  display: inline-block;
+  position: relative;
+  left: -15px;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #6dbf79;
+  margin-top: -2px;
+  margin-right: 0px;
+  vertical-align: top;
+}
+
+  .control .control__indicator:before,   .control .control__indicator:after {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  content: '';
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+  .control.control--checkbox .control__indicator:before {
+  top: 3px;
+  right: 8px;
+  width: 2px;
+  height: 19px;
+  -webkit-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  transform: rotate(40deg);
+  background: #ffffff;
+}
+
+  .control.control--checkbox .control__indicator:after {
+  top: 11px;
+  left: 6px;
+  width: 2px;
+  height: 10px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  background: #ffffff;
+}
+
+body {
+  background-color: #f0f0f0;
+}
+    </style>
+    <header class="">
+  <div (click)="toggleMenu()" class="container">
+
+    <div class="logo-wrapper">
+      <h1 class="logo" [routerLink]="['/']">
+        <a title="Mongeral Aegon"></a>
+      </h1>
+      <div class="title-mobile">
+        <h1>Área do Cliente</h1>
+        <div class="selo-beta">BETA</div>
+      </div>
+    </div>
+
+    <app-navbar [headerClick]="headerClick"></app-navbar>
+  </div>
+</header>
+
+<div class="container">
+	<div _ngcontent-c23="" class="tab-content">
+		<div _ngcontent-c23="" class="row dados-pessoais-header">
+			<!--bindings={
+				"ng-reflect-ng-if": "true"
+				}-->
+			<div _ngcontent-c23="" class="ng-star-inserted">
+				<svg _ngcontent-c23="" xml:space="preserve" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon-title-n1" id="Camada_1" style="enable-background:new 0 0 63.3 70.6;" version="1.1" viewBox="0 0 63.3 70.6" x="0px" xmlns="http://www.w3.org/2000/svg" y="0px">
+					<g _ngcontent-c23="">
+					<g _ngcontent-c23="">
+						<path _ngcontent-c23="" class="st0" d="M48.6,48.9l1.4,0.3c0.6,0.1,1.2,0.4,1.7,0.7l1.3,0.8l0.8,1.3c0.3,0.5,0.6,1.1,0.7,1.7l0.3,1.4l-0.3,1.4
+							c-0.1,0.6-0.4,1.2-0.7,1.7L53,59.5l-1.3,0.8c-0.5,0.3-1.1,0.6-1.7,0.7l-1.4,0.3L47.2,61c-0.6-0.1-1.2-0.4-1.7-0.7l-1.3-0.8
+							l-0.8-1.3c-0.3-0.5-0.6-1.1-0.7-1.7l-0.3-1.4l0.3-1.4c0.1-0.6,0.4-1.2,0.7-1.7l0.8-1.3l1.3-0.8c0.5-0.3,1.1-0.6,1.7-0.7L48.6,48.9
+							M51.4,40.4h-5.6v3.2c-1.2,0.3-2.3,0.8-3.4,1.4l-2.2-2.2l-3.9,3.9l2.2,2.2c-0.6,1-1.1,2.2-1.4,3.4h-3.2v5.6h3.2
+							c0.3,1.2,0.8,2.4,1.4,3.4l-2.2,2.2l3.9,3.9l2.2-2.2c1,0.6,2.2,1.1,3.4,1.4v3.2h5.6v-3.2c1.2-0.3,2.4-0.8,3.4-1.4l2.2,2.2l3.9-3.9
+							l-2.2-2.2c0.6-1,1.1-2.2,1.4-3.4h3.2v-5.6h-3.2c-0.3-1.2-0.8-2.3-1.4-3.4l2.2-2.2L57,42.7l-2.2,2.2c-1-0.6-2.2-1.1-3.4-1.4V40.4
+							L51.4,40.4z"></path>
+					</g>
+					<g _ngcontent-c23="">
+						<circle _ngcontent-c23="" class="st1" cx="30" cy="19.7" r="16.7"></circle>
+						<path _ngcontent-c23="" class="st1" d="M43.3,39.9c-3.9-2.2-8.5-3.5-13.3-3.5c-15,0-27.1,12.1-27.1,27.1c0,2.2,0.3,4.3,0.8,6.4"></path>
+					</g>
+					<circle _ngcontent-c23="" class="st0" cx="48.6" cy="55.1" r="3"></circle>
+					</g>
+				</svg>
+			</div>
+			<div _ngcontent-c23="" class="dados-pessoais-title">
+				<!--bindings={
+					"ng-reflect-ng-if": "false"
+					}-->
+				<div _ngcontent-c23="" class="title-value" ng-reflect-klass="title-value" ng-reflect-ng-class="[object Object]"> Informações pessoais </div>
+			</div>
+		</div>
+		<div _ngcontent-c23="" class="row ">
+			<div _ngcontent-c23="" class="col-lg-4 col-md-6 col-sm-12">
+				<label _ngcontent-c23="" class="lbl-title">Nome</label>
+				<div _ngcontent-c23="">Rafael da Silva</div>
+			</div>
+			<div _ngcontent-c23="" class="col-lg-4 col-md-6 col-sm-12">
+				<div _ngcontent-c23="" class="lbl-title"> CPF</div>
+				<div _ngcontent-c23="">900.870.207-00</div>
+			</div>
+			<div _ngcontent-c23="" class="col-lg-4 col-md-6 col-sm-12">
+				<div _ngcontent-c23="" class="lbl-title">Data de nascimento</div>
+				<div _ngcontent-c23="">14/04/1982</div>
+			</div>
+			<div _ngcontent-c23="" class="col-lg-4 col-md-6 col-sm-12">
+				<div _ngcontent-c23="" class="lbl-title">Idade</div>
+				<div _ngcontent-c23="">37</div>
+			</div>
+			<div _ngcontent-c23="" class="col-lg-4 col-md-6 col-sm-12">
+				<div _ngcontent-c23="" class="lbl-title">Sexo</div>
+				<div _ngcontent-c23="">M</div>
+			</div>
+		</div>
+		<div _ngcontent-c23="" class="row ">
+			<div _ngcontent-c23="" class="col-lg-4 col-md-6 col-sm-12">
+				<div _ngcontent-c23="" class="lbl-title">Documento de identificação</div>
+				<div _ngcontent-c23="">123456789</div>
+			</div>
+			<div _ngcontent-c23="" class="col-lg-4 col-md-6 col-sm-12">
+				<div _ngcontent-c23="" class="lbl-title">Orgão emissor</div>
+				<div _ngcontent-c23="">IFP</div>
+			</div>
+			<div _ngcontent-c23="" class="col-lg-4 col-md-6 col-sm-12">
+				<div _ngcontent-c23="" class="lbl-title">Data de emissão</div>
+				<div _ngcontent-c23="">20/09/1994</div>
+			</div>
+		</div>
+		<div _ngcontent-c23="" class="row ">
+			<div _ngcontent-c23="" class="col-lg-4 col-md-6 col-sm-12">
+				<div _ngcontent-c23="" class="lbl-title">Categoria profissional</div>
+				<div _ngcontent-c23="">EMPREGADO</div>
+			</div>
+			<div _ngcontent-c23="" class="col-lg-4 col-md-6 col-sm-12">
+				<div _ngcontent-c23="" class="lbl-title">Ocupação principal</div>
+				<div _ngcontent-c23="">Analista de Desenvolvimento de Sistemas</div>
+			</div>
+			<div _ngcontent-c23="" class="col-lg-4 col-md-6 col-sm-12">
+				<div _ngcontent-c23="" class="lbl-title">Renda mensal bruta</div>
+				<div _ngcontent-c23="">R$ 0,00</div>
+			</div>
+		</div>
+	</div>
+      
+	<div _ngcontent-c22="" class="router-content" id="div-content" ng-reflect-klass="router-content" ng-reflect-ng-class="[object Object]">
+			<!---->
+		<app-dados-pessoais-contato _nghost-c24="" class="ng-star-inserted">
+			<mg-loading-modal _ngcontent-c24="" _nghost-c4="" class="ng-tns-c4-3" ng-reflect-seethrough="true" ng-reflect-fullscreen="false">
+				<div _ngcontent-c4="" class="ng-tns-c4-3 ng-trigger ng-trigger-visibilityChanged" style="opacity: 0; display: none;">
+					<div _ngcontent-c4="" class="widget-loader background-blank seethrough fixed" ng-reflect-klass="widget-loader" ng-reflect-ng-class="[object Object]"></div>
+					<div _ngcontent-c4="" class="loading-container fixed" ng-reflect-klass="loading-container" ng-reflect-ng-class="[object Object]">
+						<div _ngcontent-c4="" class="ld-loading"></div>
+					</div>
+				</div>
+			</mg-loading-modal>
+			<form _ngcontent-c24="" novalidate="" class="ng-untouched ng-pristine ng-valid">
+				<div _ngcontent-c24="" class="tab-content">
+					<div _ngcontent-c24="" class="dados-pessoais-header">
+						<!--bindings={
+						"ng-reflect-ng-if": "true"
+						}-->
+						<div _ngcontent-c24="" class="ng-star-inserted">
+						<svg _ngcontent-c24="" xml:space="preserve" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon-title-n1" id="Camada_1" style="enable-background:new 0 0 73.6 73.6;" version="1.1" viewBox="0 0 73.6 73.6" x="0px" xmlns="http://www.w3.org/2000/svg" y="0px">
+							<path _ngcontent-c24="" class="st0" d="M43.9,22l2.2-1.2c0,0,3.5,5.5,6.5,7L70,10.4C67.9,6,63.4,3,58.2,3c-1.4,0-2.8,0.2-4.1,0.6
+								C29.3,9.5,9.6,29,3.6,53.9C3.2,55.2,3,56.8,3,58.2c0,5.2,3,9.7,7.4,11.8l17.4-17.4c-1.6-3.3-8-6.8-8-6.8s1-2.3,1.3-2.8
+								C24.9,37.4,35.7,26.8,43.9,22z"></path>
+						</svg>
+						</div>
+						<div _ngcontent-c24="" class="dados-pessoais-title">
+						<!--bindings={
+							"ng-reflect-ng-if": "false"
+							}-->
+						<div _ngcontent-c24="" class="title-value" ng-reflect-klass="title-value" ng-reflect-ng-class="[object Object]"> Contato </div>
+						</div>
+						<!--bindings={
+						"ng-reflect-ng-if": "true"
+						}-->
+						<div _ngcontent-c24="" class="desktop-edit ng-star-inserted">
+						<!--bindings={
+							"ng-reflect-ng-if": "true"
+							}-->
+						<div _ngcontent-c24="" class="editar ng-star-inserted"></div>
+						<div _ngcontent-c24="" class="mobile-edit"></div>
+						</div>
+						<div _ngcontent-c24="" style="clear: both"></div>
+					</div>
+					<div _ngcontent-c24="" class="row">
+						<div _ngcontent-c24="" class="col-sm-12">
+						<!--bindings={
+							"ng-reflect-ng-if": "true"
+							}--><label _ngcontent-c24="" class="lbl-title ng-star-inserted">E-mail</label><!--bindings={
+							"ng-reflect-ng-if": "true"
+							}-->
+						<div _ngcontent-c24="" class="ng-star-inserted">email@email.com.br</div>
+						<!--bindings={
+							"ng-reflect-ng-if": "false"
+							}-->
+						</div>
+						<div _ngcontent-c24="" class="col-lg-4 col-md-6 col-sm-12">
+						<!--bindings={
+							"ng-reflect-ng-if": "true"
+							}-->
+						<div _ngcontent-c24="" class="lbl-title ng-star-inserted">Telefone</div>
+						<!--bindings={
+							"ng-reflect-ng-if": null
+							}-->
+						<div _ngcontent-c24="" class="ng-star-inserted">(21) 2121-2121</div>
+						</div>
+						<div _ngcontent-c24="" class="col-lg-4 col-md-6 col-sm-12">
+						<!--bindings={
+							"ng-reflect-ng-if": "true"
+							}-->
+						<div _ngcontent-c24="" class="lbl-title ng-star-inserted">Celular</div>
+						<!--bindings={
+							"ng-reflect-ng-if": null
+							}-->
+						<div _ngcontent-c24="" class="ng-star-inserted">(21) 92121-2121</div>
+						</div>
+					</div>
+					<div _ngcontent-c24="" class="row" ng-reflect-klass="row" ng-reflect-ng-class="[object Object]">
+						<div _ngcontent-c24="" class="col-lg-4 col-md-6 col-sm-12">
+						<!--bindings={
+							"ng-reflect-ng-if": "true"
+							}-->
+						<div _ngcontent-c24="" class="lbl-title ng-star-inserted">CEP</div>
+						<!--bindings={
+							"ng-reflect-ng-if": null
+							}-->
+						<div _ngcontent-c24="" class="ng-star-inserted">(21) 92121-2121</div>
+						</div>
+						<div _ngcontent-c24="" class="col-lg-4 col-md-6 col-sm-12">
+						<!--bindings={
+							"ng-reflect-ng-if": "true"
+							}-->
+						<div _ngcontent-c24="" class="lbl-title ng-star-inserted">UF</div>
+						<!--bindings={
+							"ng-reflect-ng-if": "true"
+							}-->
+						<div _ngcontent-c24="" class="ng-star-inserted">RJ</div>
+						<!--bindings={
+							"ng-reflect-ng-if": "false"
+							}-->
+						</div>
+						<div _ngcontent-c24="" class="col-lg-4 col-md-6 col-sm-12">
+						<!--bindings={
+							"ng-reflect-ng-if": "true"
+							}-->
+						<div _ngcontent-c24="" class="lbl-title ng-star-inserted">Cidade</div>
+						<!--bindings={
+							"ng-reflect-ng-if": "true"
+							}-->
+						<div _ngcontent-c24="" class="ng-star-inserted">CIDADE</div>
+						<!--bindings={
+							"ng-reflect-ng-if": "false"
+							}-->
+						</div>
+						<div _ngcontent-c24="" class="col-lg-4 col-md-6 col-sm-12">
+						<!--bindings={
+							"ng-reflect-ng-if": "true"
+							}-->
+						<div _ngcontent-c24="" class="lbl-title ng-star-inserted">Bairro</div>
+						<!--bindings={
+							"ng-reflect-ng-if": "true"
+							}-->
+						<div _ngcontent-c24="" class="ng-star-inserted">NOME BAIRRO</div>
+						<!--bindings={
+							"ng-reflect-ng-if": "false"
+							}-->
+						</div>
+						<div _ngcontent-c24="" class="col-lg-4 col-md-6 col-sm-12">
+						<!--bindings={
+							"ng-reflect-ng-if": "true"
+							}-->
+						<div _ngcontent-c24="" class="lbl-title ng-star-inserted">Tipo Logradouro (rua, estrada, avenida...)</div>
+						<!--bindings={
+							"ng-reflect-ng-if": "true"
+							}-->
+						<div _ngcontent-c24="" class="ng-star-inserted">RUA</div>
+						<!--bindings={
+							"ng-reflect-ng-if": "false"
+							}-->
+						</div>
+						<div _ngcontent-c24="" class="col-lg-4 col-md-6 col-sm-12">
+						<!--bindings={
+							"ng-reflect-ng-if": "true"
+							}-->
+						<div _ngcontent-c24="" class="lbl-title ng-star-inserted">Logradouro</div>
+						<!--bindings={}--><!--bindings={
+							"ng-reflect-ng-if": "false"
+							}-->ENDEREÇO
+						</div>
+						<div _ngcontent-c24="" class="col-lg-4 col-md-6 col-sm-12">
+						<!--bindings={
+							"ng-reflect-ng-if": "true"
+							}-->
+						<div _ngcontent-c24="" class="lbl-title ng-star-inserted">Número</div>
+						<!--bindings={
+							"ng-reflect-ng-if": "true"
+							}-->
+						<div _ngcontent-c24="" class="ng-star-inserted">000</div>
+						<!--bindings={
+							"ng-reflect-ng-if": "false"
+							}-->
+						</div>
+						<div _ngcontent-c24="" class="col-lg-4 col-md-6 col-sm-12">
+						<!--bindings={
+							"ng-reflect-ng-if": "true"
+							}-->
+						<div _ngcontent-c24="" class="lbl-title ng-star-inserted">Complemento</div>
+						<!--bindings={
+							"ng-reflect-ng-if": "true"
+							}-->
+						<div _ngcontent-c24="" class="ng-star-inserted">CASA</div>
+						<!--bindings={
+							"ng-reflect-ng-if": "false"
+							}-->
+						</div>
+						<div _ngcontent-c24="" class="col-sm-12">
+						<!--bindings={
+							"ng-reflect-ng-if": "false"
+							}-->
+						</div>
+						<div _ngcontent-c24="" class="col-lg-4 col-md-6 col-sm-12">
+						<div _ngcontent-c24="" class="lbl-title">Forma de relacionamento padrão</div>
+						PAPEL<!--bindings={
+							"ng-reflect-ng-if": null
+							}--><!--bindings={
+							"ng-reflect-ng-if": "false"
+							}-->
+						</div>
+					</div>
+					<!--bindings={
+						"ng-reflect-ng-if": "false"
+						}-->
+				</div>
+			</form>
+		</app-dados-pessoais-contato>
+	</div>
+
+	<div class="row">
+		<div _ngcontent-c20="" class="col-xl-5 col-lg-5 col-md-6">
+			<mg-custo-produto _ngcontent-c20="" _nghost-c36="">
+				<div _ngcontent-c36="" class="quanto-custa-container">
+					<div _ngcontent-c36="" class="quanto-custa-title">CONTRIBUIÇÃO</div>
+					<!----><!---->
+					<div _ngcontent-c36="" class="quanto-custa-description ng-star-inserted"> Estar coberto em caso de <span _ngcontent-c36=""> Invalidez por Doença </span> custa mensalmente: </div>
+					<!---->
+					<div _ngcontent-c36="" class="header-value"><span _ngcontent-c36="">R$</span> 4,09<span _ngcontent-c36="">/ MÊS</span></div>
+					<div _ngcontent-c36="" class="quanto-custa-graph">
+						<div _ngcontent-c36="" class="quanto-custa-graph-container">
+							<div _ngcontent-c36="" class="produto-graph" style="width: 2%;"></div>
+							<div _ngcontent-c36="" class="total-graph" style="width: 98%;"></div>
+						</div>
+					</div>
+					<div _ngcontent-c36="" class="quanto-custa-legendas-container">
+						<div _ngcontent-c36="" class="quanto-custa-legenda">
+							<div _ngcontent-c36="" class="quanto-custa-legenda-title-container">
+							<div _ngcontent-c36="" class="quanto-custa-legenda-img parcial-color"></div>
+							<div _ngcontent-c36="" class="quanto-custa-legenda-title"> CONTRIBUIÇÃO DESTA COBERTURA</div>
+							</div>
+							<div _ngcontent-c36="" class="quanto-custa-legenda-value-container">
+							<div _ngcontent-c36="" class="quanto-custa-legenda-value">R$ 4,09 <span _ngcontent-c36="" class="smalltext">/ MÊS</span></div>
+							</div>
+						</div>
+						<div _ngcontent-c36="" class="quanto-custa-legenda">
+							<div _ngcontent-c36="" class="quanto-custa-legenda-title-container">
+							<div _ngcontent-c36="" class="quanto-custa-legenda-img total-color"></div>
+							<div _ngcontent-c36="" class="quanto-custa-legenda-title">CONTRIBUIÇÃO TOTAL</div>
+							</div>
+							<div _ngcontent-c36="" class="quanto-custa-legenda-value-container">
+							<div _ngcontent-c36="" class="quanto-custa-legenda-value">R$ 252,76 <span _ngcontent-c36="" class="smalltext">/ MÊS</span></div>
+							</div>
+						</div>
+						<div _ngcontent-c36="" class="digital-box">
+							<div _ngcontent-c36="" class="digital-icon-info">
+							<svg _ngcontent-c36="" height="25" viewBox="0 0 27 27" width="25" xmlns="http://www.w3.org/2000/svg">
+								<g _ngcontent-c36="" id="warning-circle" transform="translate(-2.2 -2.2)">
+									<line _ngcontent-c36="" data-name="Linha 74" fill="none" id="Linha_74" stroke-miterlimit="10" stroke-width="2" transform="translate(15.7 14.247)" y1="5.912"></line>
+									<line _ngcontent-c36="" data-name="Linha 75" fill="none" id="Linha_75" stroke-miterlimit="10" stroke-width="2" transform="translate(15.7 11.274)" y1="1.453"></line>
+									<circle _ngcontent-c36="" cx="12.5" cy="12.5" data-name="Elipse 72" fill="none" id="Elipse_72" r="12.5" stroke-miterlimit="10" stroke-width="2" transform="translate(3.2 3.2)"></circle>
+								</g>
+							</svg>
+							</div>
+							<div _ngcontent-c36="" class="digital-text">Valores representam uma média mensal a partir de 05/2019</div>
+						</div>
+					</div>
+					<!---->
+				</div>
+			</mg-custo-produto>
+		</div>
+    <div _ngcontent-c20="" class="accordion-dados-detalhes-seguro col-xl-5 col-lg-5 col-md-6">
+			<div _ngcontent-c20="" class="tabs-detalhe">
+				<!---->
+				<div _ngcontent-c20="" class="detalhe-title ng-star-inserted"> Intenção de Cancelamento </div>
+				<div _ngcontent-c20="" class="detalhe-subtitle">A seguir, selecione as coberturas que o cliente deseja cancelar:</div>
+				<div _ngcontent-c20="" class="detalhe-produto-tab-container">
+					<div _ngcontent-c20="" class="scroll-tab">
+						<ul _ngcontent-c20="" class="tabs">
+						<!---->
+						<li _ngcontent-c20="" class="ng-star-inserted active-tab">
+							<div _ngcontent-c20="" class="active-tab-div"> INDENIZAÇÃO </div>
+						</li>
+						</ul>
+					</div>
+				</div>
+				<div _ngcontent-c20="" class="tabs-content">
+					<p _ngcontent-c20="" class="total-label">VALOR TOTAL</p>
+					<div _ngcontent-c20="" class="total-value">
+						<!----><span _ngcontent-c20="">R$ </span>758.230,80 
+					</div>
+					<div _ngcontent-c20="" class="box">
+						<div _ngcontent-c20="" class="products-container">
+						<!---->
+						<mg-accordion _ngcontent-c20="" class="product ng-star-inserted" _nghost-c31="">
+            <label class="control control--checkbox"><input class="coverage-checkbox register-checked" type="checkbox" checked="checked" name="coverages[2][coverage_id]" value="9"><div class="control__indicator bounceUp"></div><span class="cover-title-text"></span></label>
+							<div _ngcontent-c31="" class="accordion">
+								<div _ngcontent-c31="" class="custom-header arrow__closed">
+									<!---->
+									<div _ngcontent-c20="" class="mg-ac-custom-header ng-star-inserted">
+									<div _ngcontent-c20="" class="custom-header-container">
+										<div _ngcontent-c20="" class="custom-header-title">
+											<div _ngcontent-c20="" class="product-title"> INVALIDEZ FUNCIONAL PERMANENTE TOTAL POR DOENÇA </div>
+											<div _ngcontent-c20="" class="product-value">CAPITAL SEGURADO: R$ 758.230,80 </div>
+											<!---->
+											<div _ngcontent-c20="" class="product-light-text ng-star-inserted">a partir de 05/2019 </div>
+										</div>
+									</div>
+									</div>
+								</div>
+							</div>
+						</mg-accordion>
+            <mg-accordion _ngcontent-c20="" class="product ng-star-inserted" _nghost-c31="">
+              <label class="control control--checkbox"><input class="coverage-checkbox register-checked" type="checkbox" checked="checked" name="coverages[2][coverage_id]" value="9"><div class="control__indicator bounceUp"></div><span class="cover-title-text"></span></label>
+							<div _ngcontent-c31="" class="accordion">
+								<div _ngcontent-c31="" class="custom-header arrow__closed">
+									<!---->
+									<div _ngcontent-c20="" class="mg-ac-custom-header ng-star-inserted">
+									<div _ngcontent-c20="" class="custom-header-container">
+										<div _ngcontent-c20="" class="custom-header-title">
+											<div _ngcontent-c20="" class="product-title"> INVALIDEZ FUNCIONAL PERMANENTE TOTAL POR DOENÇA </div>
+											<div _ngcontent-c20="" class="product-value">CAPITAL SEGURADO: R$ 758.230,80 </div>
+											<!---->
+											<div _ngcontent-c20="" class="product-light-text ng-star-inserted">a partir de 05/2019 </div>
+										</div>
+									</div>
+									</div>
+								</div>
+							</div>
+						</mg-accordion>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
