@@ -1704,3 +1704,64 @@
     font-family: sentico_medium,Arial,Helvetica,sans-serif;
     text-transform: uppercase;
 }
+
+.tabs-content.custom {
+  padding: 0 20px;
+}
+
+.tabs-content.custom .total-label {
+  font-family: sentico_medium, Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  padding: 0 0;
+  text-align: left;
+  color: #000;
+  margin-top: 0;
+}
+
+.tabs-content.custom .total-small-text {
+  color: #929292;
+}
+
+.custom-select {
+  background-color: transparent;
+  border: none;
+  font-size: 17px;
+  margin-bottom: 41px;
+  color: #929292;
+}
+
+.custom-button {
+  flex-direction: row-reverse;
+}
+
+.custom-button.button button {
+  padding: 16px 25px;
+}
+
+.custom-button.button button p{
+  font-size: 16px;
+  height: 16px;
+  font-family: sentico_medium, Arial, Helvetica, sans-serif;
+}
+
+.tabs-detalhe .tabs-content.no-show {
+  display: none;
+  padding-bottom: 20px;
+}
+
+.blur-on-sent.blur {
+  opacity: 0.3;
+}
+
+.sent-title {
+  font-size: 41px;
+  text-align: center;
+}
+
+.sent-text {
+  text-align: center;
+}
+
+.sent-text .sent-text-span {
+  color: #000;
+}

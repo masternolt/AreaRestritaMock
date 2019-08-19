@@ -25,6 +25,239 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+  <style>
+	  @media screen and (max-width: 993px) {
+   .button {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap-reverse;
+    -ms-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
+  }
+}
+
+ .button svg {
+  width: 15px;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  top: 2px;
+  position: relative;
+}
+
+ .button svg .st0 {
+  stroke: #0077c8;
+}
+
+ .button button {
+  position: relative;
+  min-width: 240px;
+  padding: 25px 25px;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 50px;
+  z-index: 999;
+  /*.loader{
+		top: 25px;
+    	left: 85%;
+	}*/
+}
+
+ .button button:not(.outline) {
+  background-color: #0077C8;
+  border: none;
+}
+
+ .button button.small {
+  padding: 10px 25px;
+  top: -13px;
+}
+
+ .button button.small span {
+  font-size: 16px;
+}
+
+ .button button.outline {
+  background-color: transparent;
+  border: 2px solid #0077C8;
+}
+
+ .button button p {
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #FFF;
+  position: relative;
+  text-align: center;
+  z-index: 999;
+  margin: 0;
+}
+
+ .button button p a {
+  color: #FFF;
+}
+
+ .button button p.magicon {
+  float: right;
+  height: 20px;
+  margin-top: -7px;
+  margin-right: 0px;
+  font-size: 25px;
+}
+
+ .button button p svg .st0 {
+  stroke: #FFF;
+}
+
+ .button button p svg .st1 {
+  stroke: #FFF;
+}
+
+ .button button p svg .link-arrow-elements {
+  stroke: #FFF;
+}
+
+ .button button p svg .switch-arrow-elements {
+  stroke: #FFF;
+}
+
+ .button button:hover p {
+  color: "";
+}
+
+ .button button:hover p a {
+  color: "";
+}
+
+ .button button:hover p svg .st0 {
+  stroke: "";
+}
+
+ .button button:hover p svg .st1 {
+  stroke: "";
+}
+
+ .button button:hover p svg .link-arrow-elements {
+  stroke: "";
+}
+
+ .button button:hover p svg .switch-arrow-elements {
+  stroke: "";
+}
+
+ .button button.btn-n:before {
+  content: "";
+  position: absolute;
+  background-color: #3395D3;
+  width: 0;
+  height: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: 0px;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  z-index: 1;
+}
+
+ .button button.btn-n:hover:before {
+  width: 100%;
+}
+
+ .button button.btn-f:before {
+  content: "";
+  position: absolute;
+  background-color: #3395D3;
+  width: 0;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  z-index: 1;
+}
+
+ .button button.btn-f:hover:before {
+  width: 100%;
+}
+
+ .button button.btn-b:before {
+  content: "";
+  position: absolute;
+  background-color: #3395D3;
+  width: 0;
+  height: 100%;
+  right: 0px;
+  top: 0px;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  z-index: 1;
+}
+
+ .button button.btn-b:hover:before {
+  width: 100%;
+}
+
+ .button button.btn-d:before {
+  content: "";
+  position: absolute;
+  background-color: #3395D3;
+  width: 100%;
+  height: 0;
+  right: 0px;
+  top: 0px;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  z-index: 1;
+}
+
+ .button button.btn-d:hover:before {
+  height: 100%;
+}
+
+ .button button[disabled='disabled'] {
+  border: 1px solid #A5A5A5;
+  background-color: transparent;
+}
+
+ .button button[disabled='disabled'] p {
+  color: #A5A5A5;
+}
+
+ .button button[disabled='disabled']:hover:before {
+  width: 0;
+}
+
+ .button button p {
+  font-size: 25px;
+  margin-top: 0px;
+  height: 25px;
+}
+
+ .button button p.magicon {
+  margin-top: 0px;
+}
+
+ .button a {
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 993px) {
+   .button a {
+    margin-top: 40px;
+  }
+}
+  </style>
 
 
 </head>
@@ -381,57 +614,89 @@
 						</ul>
 					</div>
 				</div>
-				<div _ngcontent-c20="" class="tabs-content">
+				<div _ngcontent-c20="" class="tabs-content blur-on-sent">
 					<p _ngcontent-c20="" class="total-label">VALOR TOTAL</p>
 					<div _ngcontent-c20="" class="total-value">
 						<!----><span _ngcontent-c20="">R$ </span>758.230,80 
 					</div>
 					<div _ngcontent-c20="" class="box">
 						<div _ngcontent-c20="" class="products-container">
-						<!---->
-						<mg-accordion _ngcontent-c20="" class="product ng-star-inserted" _nghost-c31="">
-            <label class="control control--checkbox"><input class="coverage-checkbox register-checked" type="checkbox" checked="checked" name="coverages[2][coverage_id]" value="9"><div class="control__indicator bounceUp"></div><span class="cover-title-text"></span></label>
-							<div _ngcontent-c31="" class="accordion">
-								<div _ngcontent-c31="" class="custom-header arrow__closed">
-									<!---->
-									<div _ngcontent-c20="" class="mg-ac-custom-header ng-star-inserted">
-									<div _ngcontent-c20="" class="custom-header-container">
-										<div _ngcontent-c20="" class="custom-header-title">
-											<div _ngcontent-c20="" class="product-title"> INVALIDEZ FUNCIONAL PERMANENTE TOTAL POR DOENÇA </div>
-											<div _ngcontent-c20="" class="product-value">CAPITAL SEGURADO: R$ 758.230,80 </div>
-											<!---->
-											<div _ngcontent-c20="" class="product-light-text ng-star-inserted">a partir de 05/2019 </div>
+							<mg-accordion _ngcontent-c20="" class="product ng-star-inserted" _nghost-c31="">
+								<label class="control control--checkbox"><input class="coverage-checkbox register-checked" type="checkbox" checked="checked" name="coverages[2][coverage_id]" value="9"><div class="control__indicator bounceUp"></div><span class="cover-title-text"></span></label>
+								<div _ngcontent-c31="" class="accordion">
+									<div _ngcontent-c31="" class="custom-header arrow__closed">
+										<!---->
+										<div _ngcontent-c20="" class="mg-ac-custom-header ng-star-inserted">
+										<div _ngcontent-c20="" class="custom-header-container">
+											<div _ngcontent-c20="" class="custom-header-title">
+												<div _ngcontent-c20="" class="product-title"> INVALIDEZ FUNCIONAL PERMANENTE TOTAL POR DOENÇA </div>
+												<div _ngcontent-c20="" class="product-value">CAPITAL SEGURADO: R$ 758.230,80 </div>
+												<!---->
+												<div _ngcontent-c20="" class="product-light-text ng-star-inserted">a partir de 05/2019 </div>
+											</div>
+										</div>
 										</div>
 									</div>
-									</div>
 								</div>
-							</div>
-						</mg-accordion>
-            <mg-accordion _ngcontent-c20="" class="product ng-star-inserted" _nghost-c31="">
-              <label class="control control--checkbox"><input class="coverage-checkbox register-checked" type="checkbox" checked="checked" name="coverages[2][coverage_id]" value="9"><div class="control__indicator bounceUp"></div><span class="cover-title-text"></span></label>
-							<div _ngcontent-c31="" class="accordion">
-								<div _ngcontent-c31="" class="custom-header arrow__closed">
-									<!---->
-									<div _ngcontent-c20="" class="mg-ac-custom-header ng-star-inserted">
-									<div _ngcontent-c20="" class="custom-header-container">
-										<div _ngcontent-c20="" class="custom-header-title">
-											<div _ngcontent-c20="" class="product-title"> INVALIDEZ FUNCIONAL PERMANENTE TOTAL POR DOENÇA </div>
-											<div _ngcontent-c20="" class="product-value">CAPITAL SEGURADO: R$ 758.230,80 </div>
-											<!---->
-											<div _ngcontent-c20="" class="product-light-text ng-star-inserted">a partir de 05/2019 </div>
+							</mg-accordion>
+							<mg-accordion _ngcontent-c20="" class="product ng-star-inserted" _nghost-c31="">
+								<label class="control control--checkbox">
+									<input class="coverage-checkbox register-checked" type="checkbox" checked="checked" name="coverages[2][coverage_id]" value="9"><div class="control__indicator bounceUp"></div><span class="cover-title-text"></span>
+								</label>
+								<div _ngcontent-c31="" class="accordion">
+									<div _ngcontent-c31="" class="custom-header arrow__closed">
+										<!---->
+										<div _ngcontent-c20="" class="mg-ac-custom-header ng-star-inserted">
+										<div _ngcontent-c20="" class="custom-header-container">
+											<div _ngcontent-c20="" class="custom-header-title">
+												<div _ngcontent-c20="" class="product-title"> INVALIDEZ FUNCIONAL PERMANENTE TOTAL POR DOENÇA </div>
+												<div _ngcontent-c20="" class="product-value">CAPITAL SEGURADO: R$ 758.230,80 </div>
+												<!---->
+												<div _ngcontent-c20="" class="product-light-text ng-star-inserted">a partir de 05/2019 </div>
+											</div>
+										</div>
 										</div>
 									</div>
-									</div>
 								</div>
-							</div>
-						</mg-accordion>
+							</mg-accordion>
 						</div>
 					</div>
+				</div>
+				<div _ngcontent-c20="" class="tabs-content custom motive">
+					<p _ngcontent-c20="" class="total-label">Justificativa</p>
+					<p _ngcontent-c20="" class="total-small-text">Informe o motivo do cliente ter solicitado o cancelamento</p>
+					<select class="custom-select">
+						<option value>Selecione</option>
+						<option value="1">Dificuldade financeira</option>
+						<option value="2">O produto não faz mais sentido</option>
+					</select>
+					<div class="row button custom-button">
+						<button class="btn btn-lg btn-f step-forward send-cancelation" data-step="1" data-current-step="0" type="button"><p class="pull-left document-button">ENVIAR SOLICITAÇÃO</p></button>
+					</div>
+				</div>
+				<div _ngcontent-c20="" class="tabs-content custom sent no-show">
+					<p class="sent-title">
+						Solicitação de Cancelamento enviada com sucesso!
+					</p>
+					<p class="sent-text">
+						<span class="sent-text-span">Foi enviada uma notificação ao corretor e a Sucursal responsável por esse cliente</span><br></br>
+						<a href="#" class="default-link">Ticket #123</a>
+					</p>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
+
+<script>
+	$(document).ready(function() {
+		$('.send-cancelation').click(function() {
+			$('.motive').hide(300);
+			$('.sent').show(300);
+			$('.blur-on-sent').addClass('blur');
+		});
+	})
+</script>
 
 </body>
 </html>
