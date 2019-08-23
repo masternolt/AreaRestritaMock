@@ -1726,7 +1726,7 @@
   background-color: transparent;
   border: none;
   font-size: 17px;
-  margin-bottom: 41px;
+  margin-bottom: 21px;
   color: #929292;
 }
 
@@ -1764,4 +1764,9 @@
 
 .sent-text .sent-text-span {
   color: #000;
+}
+
+.custom-textarea {
+  margin-bottom: 41px;
+  height: 109px;
 }
